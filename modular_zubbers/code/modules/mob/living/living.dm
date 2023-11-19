@@ -1,4 +1,4 @@
-/* /mob/living/Initialize(mapload)
+/mob/living/carbon/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/status_indicator)
- */
+
