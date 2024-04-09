@@ -3078,6 +3078,11 @@
 	dir = 4
 	},
 /area/ruin/space/has_grav/bubbers/dauntless/service/kitchen)
+"pf" = (
+/obj/effect/turf_decal/tile/dark_green/full,
+/obj/effect/mob_spawn/ghost_role/human/dauntless/syndicate/stationmed,
+/turf/open/floor/iron/dark,
+/area/ruin/space/has_grav/bubbers/dauntless/med/viro)
 "pi" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/marker_beacon/burgundy,
@@ -5158,6 +5163,7 @@
 /obj/machinery/camera/autoname/directional/west{
 	network = list("dauntless")
 	},
+/obj/effect/mob_spawn/ghost_role/human/dauntless/syndicate/brigoff,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bubbers/dauntless/sec/interrogation)
 "ze" = (
@@ -9654,6 +9660,7 @@
 "VF" = (
 /obj/structure/closet/secure_closet/interdynefob/brig_officer_locker,
 /obj/structure/sign/flag/syndicate/directional/north,
+/obj/item/gun/energy/e_gun,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/bubbers/dauntless/sec/officer)
 "VG" = (
@@ -13141,7 +13148,7 @@ bP
 bP
 Qo
 DZ
-aY
+pf
 aY
 aY
 bN
