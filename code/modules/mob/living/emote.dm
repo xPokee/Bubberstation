@@ -126,26 +126,31 @@
 	key_third_person = "flaps"
 	message = "flaps their wings."
 	hands_use_check = TRUE
-	var/wing_time = 0.35 SECONDS
+	var/wing_time = 20
 
+//SKYRAT EDIT REMOVAL BEGIN - EMOTES - Not working due to modified mutant code, will be fixed later
+/*
 /datum/emote/living/flap/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
 	if(. && ishuman(user))
-		var/mob/living/carbon/human/human_user = user
+		var/mob/living/carbon/human/H = user
 		var/open = FALSE
-		var/obj/item/organ/external/wings/functional/wings = human_user.get_organ_slot(ORGAN_SLOT_EXTERNAL_WINGS)
+		var/obj/item/organ/external/wings/functional/wings = H.get_organ_slot(ORGAN_SLOT_EXTERNAL_WINGS)
 
 		// open/close functional wings
 		if(istype(wings))
 			if(wings.wings_open)
 				open = TRUE
-				wings.close_wings()
+				H.CloseWings()
 			else
-				wings.open_wings()
+				H.OpenWings()
 			addtimer(CALLBACK(wings,  open ? TYPE_PROC_REF(/obj/item/organ/external/wings/functional, open_wings) : TYPE_PROC_REF(/obj/item/organ/external/wings/functional, close_wings)), wing_time)
 
-		// play a flapping noise if the wing has this implemented
-		wings.make_flap_sound(human_user)
+		// play moth flutter noise if moth wing
+		if(istype(wings, /obj/item/organ/external/wings/moth))
+			playsound(H, 'sound/voice/moth/moth_flutter.ogg', 50, TRUE)
+*/
+//SKYRAT EDIT REMOVAL END
 
 /datum/emote/living/flap/aflap
 	key = "aflap"

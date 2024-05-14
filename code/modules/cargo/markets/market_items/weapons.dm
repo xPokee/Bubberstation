@@ -1,6 +1,5 @@
 /datum/market_item/weapon
 	category = "Weapons"
-	abstract_path = /datum/market_item/weapon
 
 /datum/market_item/weapon/bear_trap
 	name = "Bear Trap"

@@ -19,7 +19,7 @@
 "h" = (
 /obj/structure/rack,
 /turf/open/indestructible/dark,
-/area/virtual_domain/protected_space)
+/area/ruin/space/has_grav/powered/virtual_domain)
 "i" = (
 /obj/structure/sign/warning/directional/east,
 /turf/open/chasm,
@@ -61,20 +61,10 @@
 /obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/virtual_domain)
-"D" = (
-/turf/open/indestructible/dark,
-/area/virtual_domain/protected_space)
 "F" = (
 /obj/structure/mystery_box/guns,
 /turf/open/indestructible/dark,
-/area/virtual_domain/protected_space)
-"I" = (
-/turf/closed/indestructible/binary,
-/area/virtual_domain/protected_space)
-"J" = (
-/obj/machinery/door/airlock/abductor,
-/turf/open/indestructible/dark,
-/area/virtual_domain/protected_space)
+/area/ruin/space/has_grav/powered/virtual_domain)
 "K" = (
 /obj/effect/baseturf_helper/virtual_domain,
 /turf/closed/indestructible/binary,
@@ -540,10 +530,10 @@ Y
 Y
 a
 Y
-I
-I
-I
-I
+a
+a
+a
+a
 a
 a
 a
@@ -567,10 +557,10 @@ Y
 Y
 Y
 Y
-I
+a
 h
-D
-D
+Y
+Y
 t
 t
 t
@@ -594,10 +584,10 @@ X
 Y
 Y
 Y
-I
+a
 F
-D
-D
+Y
+Y
 t
 t
 t
@@ -621,10 +611,10 @@ a
 Y
 Y
 Y
-I
-D
-D
-D
+a
+Y
+Y
+Y
 t
 t
 t
@@ -648,10 +638,10 @@ Y
 Y
 Y
 Y
-J
-D
-D
-D
+T
+Y
+Y
+Y
 t
 t
 t
@@ -675,10 +665,10 @@ Y
 R
 Y
 Y
-I
-D
-D
-D
+a
+Y
+Y
+Y
 t
 t
 t
@@ -702,10 +692,10 @@ Y
 Y
 Y
 Y
-I
+a
 F
-D
-D
+Y
+Y
 t
 t
 t
@@ -729,10 +719,10 @@ a
 a
 Y
 Y
-I
+a
 h
-D
-D
+Y
+Y
 t
 t
 t
@@ -756,10 +746,10 @@ a
 a
 a
 Y
-I
-I
-I
-I
+a
+a
+a
+a
 a
 a
 a

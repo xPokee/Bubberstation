@@ -198,11 +198,11 @@
 	wanted_types = list(/obj/item/pneumatic_cannon/ghetto = TRUE)
 
 /datum/bounty/item/assistant/improvised_shells
-	name = "Junk Shells"
-	description = "Our assistant militia has chewed through all our iron supplies. To stop them making bullets out of station property, we need junk shells, pronto."
+	name = "Improvised Shotgun Shells"
+	description = "Budget cuts are hitting our security department pretty hard. Send some improvised shotgun shells when you can."
 	reward = CARGO_CRATE_VALUE * 4
 	required_count = 5
-	wanted_types = list(/obj/item/ammo_casing/junk = TRUE)
+	wanted_types = list(/obj/item/ammo_casing/shotgun/improvised = TRUE)
 
 /datum/bounty/item/assistant/flamethrower
 	name = "Flamethrower"

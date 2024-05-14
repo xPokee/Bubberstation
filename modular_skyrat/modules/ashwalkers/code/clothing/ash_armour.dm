@@ -50,8 +50,6 @@
 	name = "Ash Headdress"
 	result = /obj/item/clothing/head/ash_headdress
 	category = CAT_CLOTHING
-	//recipe given to ashwalkers as part of their spawner/team setting
-	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /obj/item/clothing/head/ash_headdress/Initialize(mapload)
 	. = ..()
@@ -64,7 +62,6 @@
 /datum/crafting_recipe/ash_recipe/ash_headdress/winged
 	name = "Winged Ash Headdress"
 	result = /obj/item/clothing/head/ash_headdress/winged
-	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /obj/item/clothing/under/costume/gladiator/ash_walker/ash_robes
 	name = "ash robes"
@@ -84,7 +81,6 @@
 	name = "Ash Robes"
 	result = /obj/item/clothing/under/costume/gladiator/ash_walker/ash_robes
 	category = CAT_CLOTHING
-	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /obj/item/clothing/under/costume/gladiator/ash_walker/ash_robes/Initialize(mapload)
 	. = ..()
@@ -109,7 +105,6 @@
 	name = "Ash Combat Plates"
 	result = /obj/item/clothing/under/costume/gladiator/ash_walker/ash_plates
 	category = CAT_CLOTHING
-	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /obj/item/clothing/under/costume/gladiator/ash_walker/ash_plates/Initialize(mapload)
 	. = ..()
@@ -123,7 +118,6 @@
 	name = "Decorated Ash Combat Plates"
 	result = /obj/item/clothing/under/costume/gladiator/ash_walker/ash_plates/decorated
 	category = CAT_CLOTHING
-	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /obj/item/clothing/shoes/bone_greaves
 	name = "bone greaves"

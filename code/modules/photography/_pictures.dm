@@ -72,6 +72,7 @@
 	.["caption"] = caption
 	.["pixel_size_x"] = psize_x
 	.["pixel_size_y"] = psize_y
+	.["blueprints"] = has_blueprints
 	.["logpath"] = logpath
 
 	SET_SERIALIZATION_SEMVER(semvers, "1.0.0")
@@ -92,6 +93,8 @@
 	id = input["id"]
 	psize_x = input["pixel_size_x"]
 	psize_y = input["pixel_size_y"]
+	if(input["blueprints"])
+		has_blueprints = input["blueprints"]
 	if(input["caption"])
 		caption = input["caption"]
 	if(input["desc"])

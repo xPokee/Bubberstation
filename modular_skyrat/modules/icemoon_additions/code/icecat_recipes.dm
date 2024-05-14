@@ -54,8 +54,9 @@
 /datum/crafting_recipe/anointing_oil
 	name = "Anointing Bloodresin"
 	category = CAT_MISC
+
 	//recipe given to icecats as part of their spawner/team setting
-	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
+	always_available = FALSE
 
 	reqs = list(
 		/datum/reagent/consumable/liquidgibs = 80,

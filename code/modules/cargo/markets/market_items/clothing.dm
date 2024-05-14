@@ -1,6 +1,5 @@
 /datum/market_item/clothing
 	category = "Clothing"
-	abstract_path = /datum/market_item/clothing
 
 /datum/market_item/clothing/ninja_mask
 	name = "Space Ninja Mask"

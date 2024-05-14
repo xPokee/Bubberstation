@@ -1,6 +1,5 @@
 /datum/market_item/tool
 	category = "Tools"
-	abstract_path = /datum/market_item/tool
 
 /datum/market_item/tool/blackmarket_telepad
 	name = "Black Market LTSRBT"

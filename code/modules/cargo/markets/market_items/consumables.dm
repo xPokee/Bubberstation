@@ -1,6 +1,5 @@
 /datum/market_item/consumable
 	category = "Consumables"
-	abstract_path = /datum/market_item/consumable
 
 /datum/market_item/consumable/clown_tears
 	name = "Bottle of Clown's Tears"

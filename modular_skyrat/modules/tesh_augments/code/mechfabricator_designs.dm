@@ -1,7 +1,6 @@
 //adding teshari silicon stuff to the mechfabricator
 
 #define RND_SUBCATEGORY_MECHFAB_CYBORG_RAPTORAL "/Raptoral"
-#define RND_SUBCATEGORY_CYBERNETICS_ADVANCED_RAPTORAL "/Advanced Raptoral Limbs"
 
 /datum/design/teshari_cyber_chest
 	name = "Raptoral Cybernetic Torso"
@@ -83,7 +82,7 @@
 	)
 	construction_time = 8 SECONDS
 	category = list(
-		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ADVANCED_RAPTORAL,
+		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_RAPTORAL,
 	)
 
 /datum/design/teshari_advanced_r_arm
@@ -98,7 +97,7 @@
 	)
 	construction_time = 8 SECONDS
 	category = list(
-		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ADVANCED_RAPTORAL,
+		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_RAPTORAL,
 	)
 
 /datum/design/teshari_advanced_l_leg
@@ -113,7 +112,7 @@
 	)
 	construction_time = 8 SECONDS
 	category = list(
-		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ADVANCED_RAPTORAL,
+		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_RAPTORAL,
 	)
 
 /datum/design/teshari_advanced_r_leg
@@ -128,5 +127,5 @@
 	)
 	construction_time = 8 SECONDS
 	category = list(
-		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ADVANCED_RAPTORAL,
+		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_RAPTORAL,
 	)
