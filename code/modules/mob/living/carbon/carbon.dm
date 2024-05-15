@@ -1472,6 +1472,8 @@
 	var/obj/effect/decal/cleanable/blood/hitsplatter/our_splatter = new(loc)
 	our_splatter.add_blood_DNA(GET_ATOM_BLOOD_DNA(src))
 	our_splatter.blood_dna_info = get_blood_dna_list()
+/* 	var/mob/living/carbon/me = src
+	our_splatter.color = istype(me) ? me.dna.blood_colour : "#ff0000" */
 	var/turf/targ = get_ranged_target_turf(src, splatter_direction, splatter_strength)
 	our_splatter.fly_towards(targ, splatter_strength)
 

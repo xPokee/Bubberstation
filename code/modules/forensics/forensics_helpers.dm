@@ -88,7 +88,7 @@
 		forensics = new(src, blood_DNA = blood_DNA_to_add)
 	return TRUE
 
-/obj/item/add_blood_DNA(list/blood_DNA_to_add)
+/obj/item/add_blood_DNA(list/blood_DNA_to_add, colour_to_taint)
 	if(item_flags & NO_BLOOD_ON_ITEM)
 		return FALSE
 	return ..()
@@ -112,19 +112,20 @@
 /mob/living/carbon/human/add_blood_DNA(list/blood_DNA_to_add, list/datum/disease/diseases)
 	if (QDELETED(src))
 		return
+	var/colour_to_taint = dna?.blood_colour || "#FFFFFF"
 	if(wear_suit)
-		wear_suit.add_blood_DNA(blood_DNA_to_add)
+		wear_suit.add_blood_DNA(blood_DNA_to_add, colour_to_taint = colour_to_taint)
 		update_worn_oversuit()
 	else if(w_uniform)
-		w_uniform.add_blood_DNA(blood_DNA_to_add)
+		w_uniform.add_blood_DNA(blood_DNA_to_add, colour_to_taint = colour_to_taint)
 		update_worn_undersuit()
 	if(gloves)
 		var/obj/item/clothing/gloves/mob_gloves = gloves
-		mob_gloves.add_blood_DNA(blood_DNA_to_add)
+		mob_gloves.add_blood_DNA(blood_DNA_to_add, colour_to_taint = colour_to_taint)
 	else if(length(blood_DNA_to_add))
 		if (isnull(forensics))
 			forensics = new(src)
-		forensics.inherit_new(blood_DNA = blood_DNA_to_add)
+		forensics.inherit_new(blood_DNA = blood_DNA_to_add, colour_to_taint = colour_to_taint)
 		blood_in_hands = rand(2, 4)
 	update_worn_gloves()
 	return TRUE

@@ -751,3 +751,9 @@ export const pod_hair_emissive: Feature<boolean> = {
   description: 'Emissive parts glow in the dark.',
   component: CheckboxInput,
 };
+// BUBBER EDIT BEGIN
+export const blood_colour: Feature<string[]> = {
+  name: 'Blood Colors',
+  component: FeatureColorInput,
+};
+// BUBBDER EDIT END

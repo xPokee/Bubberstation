@@ -39,7 +39,7 @@
 	 */
 	var/list/fibers
 
-/datum/forensics/New(atom/parent, list/fingerprints, list/hiddenprints, list/blood_DNA, list/fibers)
+/datum/forensics/New(atom/parent, list/fingerprints, list/hiddenprints, list/blood_DNA, list/fibers, colour_to_taint)
 	if(!isatom(parent))
 		stack_trace("We tried adding a forensics datum to something that isnt an atom. What the hell are you doing?")
 		qdel(src)
@@ -52,10 +52,11 @@
 	src.hiddenprints = hiddenprints
 	src.blood_DNA = blood_DNA
 	src.fibers = fibers
+	parent.color = colour_to_taint
 	check_blood()
 
 /// Merges the given lists into the preexisting values
-/datum/forensics/proc/inherit_new(list/fingerprints, list/hiddenprints, list/blood_DNA, list/fibers) //Use of | and |= being different here is INTENTIONAL.
+/datum/forensics/proc/inherit_new(list/fingerprints, list/hiddenprints, list/blood_DNA, list/fibers, colour_to_taint) //Use of | and |= being different here is INTENTIONAL.
 	if (fingerprints)
 		src.fingerprints = LAZY_LISTS_OR(src.fingerprints, fingerprints)
 	if (hiddenprints)
@@ -64,6 +65,8 @@
 		src.blood_DNA = LAZY_LISTS_OR(src.blood_DNA, blood_DNA)
 	if (fibers)
 		src.fibers = LAZY_LISTS_OR(src.fibers, fibers)
+	if (colour_to_taint)
+		parent.color = colour_to_taint
 	check_blood()
 
 /datum/forensics/Destroy(force)
@@ -232,3 +235,5 @@
 	if(!length(blood_DNA))
 		return
 	parent.AddElement(/datum/element/decal/blood)
+	for(var/datum/dna/blood in blood_DNA)
+		parent.color = blood.blood_colour
