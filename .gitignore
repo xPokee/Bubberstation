@@ -247,3 +247,10 @@ define_sanity_output.txt
 # ezdb
 /db/
 /config/ezdb.txt
+
+# Ignore Common Custom Configs
+/config/game_options.txt
+/config/admins.txt
+/config/admin_ranks.txt
+/config/whitelist.txt
+/config/config.txt
