@@ -89,6 +89,10 @@
 #define BODYTYPE_GOLEM (1<<4)
 //The limb is a peg limb
 #define BODYTYPE_PEG (1<<5)
+///BUBBER EDIT ADD BEGIN
+/// Nano bodytype, for recycling by proteans
+#define BODYTYPE_NANO (1<<7)
+///BUBBER EDIT END
 // SKYRAT EDIT ADDITION
 ///The limb fits a modular custom shape
 #define BODYSHAPE_CUSTOM (1<<9)

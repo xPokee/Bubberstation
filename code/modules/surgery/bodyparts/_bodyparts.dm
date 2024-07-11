@@ -227,7 +227,12 @@
 	if(!IS_ORGANIC_LIMB(src))
 		grind_results = null
 
-	name = "[limb_id] [parse_zone(body_zone)]"
+	// BUBBER EDIT START - Limb names
+	if(isnull(limb_species))
+		name = "[limb_id] [parse_zone(body_zone)]"
+	else
+		name = "[limb_species] [parse_zone(body_zone)]"
+	// BUBBER EDIT END
 	update_icon_dropped()
 	refresh_bleed_rate()
 
