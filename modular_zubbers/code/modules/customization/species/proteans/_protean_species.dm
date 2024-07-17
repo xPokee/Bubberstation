@@ -1,5 +1,3 @@
-
-
 /datum/species/protean
 	id = SPECIES_PROTEAN
 	examine_limb_id = SPECIES_PROTEAN
@@ -45,6 +43,7 @@
 		// Needed to keep only the exclusive organs and not die randomly
 		TRAIT_NOBREATH,
 		TRAIT_LIVERLESS_METABOLISM,
+		TRAIT_ROCK_EATER,
 
 		// Extra cool stuff
 		TRAIT_RADIMMUNE,
@@ -61,15 +60,23 @@
 	/// Reference to the modsuit that the species comes with
 	var/obj/item/mod/control/pre_equipped/protean/species_modsuit
 
+	/// Reference to the species owner (Yes we need this)
+	var/mob/living/carbon/human/owner
+
 /mob/living/carbon/human/species/protean
 	race = /datum/species/protean
 
 /datum/species/protean/on_species_gain(mob/living/carbon/human/gainer, datum/species/old_species, pref_load)
 	. = ..()
+	owner = gainer
+
 	equip_modsuit(gainer)
+	var/obj/item/mod/core/protean/core = species_modsuit.core
+	core.linked_species = src
 
 /datum/species/protean/on_species_loss(mob/living/carbon/human/gainer, datum/species/new_species, pref_load)
 	. = ..()
+	owner = null
 	//gainer.dropItemToGround(species_modsuit, TRUE)
 	qdel(species_modsuit)
 

@@ -3,9 +3,13 @@
 	desc = "The hardsuit rig unit of a Protean, allowing them to retract into it, or to deploy a suit that protects against various environments."
 	theme = /datum/mod_theme/protean
 
+	applied_core = /obj/item/mod/core/protean
+
+	slowdown_inactive = 0
+	slowdown_active = 0.5
+
 /datum/mod_theme/protean
 	name = "Protean"
-	desc = ""
 
 /obj/item/mod/control/pre_equipped/protean/Initialize(mapload, datum/mod_theme/new_theme, new_skin, obj/item/mod/core/new_core)
 	. = ..()
