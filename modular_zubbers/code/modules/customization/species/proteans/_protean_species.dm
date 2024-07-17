@@ -58,8 +58,21 @@
 
 	inherent_biotypes = MOB_ROBOTIC | MOB_HUMANOID
 
+	/// Reference to the modsuit that the species comes with
+	var/obj/item/mod/control/pre_equipped/protean/species_modsuit
+
 /mob/living/carbon/human/species/protean
 	race = /datum/species/protean
 
-/datum/species/protean/on_species_gain(mob/living/carbon/human/human_who_gained_species, datum/species/old_species, pref_load)
+/datum/species/protean/on_species_gain(mob/living/carbon/human/gainer, datum/species/old_species, pref_load)
 	. = ..()
+	equip_modsuit(gainer)
+
+
+/datum/species/protean/proc/equip_modsuit(mob/living/carbon/human/gainer)
+	species_modsuit = new()
+	var/obj/item/item_in_slot = gainer.get_item_by_slot(ITEM_SLOT_BACK)
+	if(item_in_slot)
+		gainer.dropItemToGround(item_in_slot, force = TRUE)
+		qdel(item_in_slot)
+	return gainer.equip_to_slot_if_possible(species_modsuit, ITEM_SLOT_BACK, disable_warning = TRUE)
