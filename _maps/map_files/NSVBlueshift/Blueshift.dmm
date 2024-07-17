@@ -39223,6 +39223,19 @@
 /obj/item/folder/red,
 /turf/open/floor/plating,
 /area/station/maintenance/abandon_holding_cell)
+"hyk" = (
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/layer4,
+/turf/open/floor/iron/dark,
+/area/station/science/ordnance)
 "hym" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
@@ -40720,6 +40733,11 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/service)
+"hMR" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/machinery/incident_display/bridge/directional/south,
+/turf/open/floor/iron/dark/side,
+/area/station/hallway/secondary/command)
 "hMW" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -59641,21 +59659,6 @@
 /obj/item/pen,
 /turf/open/floor/iron/dark,
 /area/station/engineering/transit_tube)
-"lrX" = (
-/obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/window/reinforced/spawner/directional/east,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/effect/turf_decal/bot,
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	piping_layer = 4
-	},
-/turf/open/floor/iron/dark,
-/area/station/science/ordnance)
 "lsb" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -223212,7 +223215,7 @@ duP
 gRC
 wZW
 gwW
-xUY
+hMR
 xai
 wEl
 vre
@@ -229722,7 +229725,7 @@ hDu
 eoz
 yjD
 hJE
-lrX
+hyk
 leC
 dxT
 xbd
