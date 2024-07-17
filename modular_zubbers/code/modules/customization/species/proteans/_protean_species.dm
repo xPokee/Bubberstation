@@ -68,11 +68,14 @@
 	. = ..()
 	equip_modsuit(gainer)
 
+/datum/species/protean/on_species_loss(mob/living/carbon/human/gainer, datum/species/new_species, pref_load)
+	. = ..()
+	//gainer.dropItemToGround(species_modsuit, TRUE)
+	qdel(species_modsuit)
 
 /datum/species/protean/proc/equip_modsuit(mob/living/carbon/human/gainer)
 	species_modsuit = new()
 	var/obj/item/item_in_slot = gainer.get_item_by_slot(ITEM_SLOT_BACK)
 	if(item_in_slot)
 		gainer.dropItemToGround(item_in_slot, force = TRUE)
-		qdel(item_in_slot)
 	return gainer.equip_to_slot_if_possible(species_modsuit, ITEM_SLOT_BACK, disable_warning = TRUE)
