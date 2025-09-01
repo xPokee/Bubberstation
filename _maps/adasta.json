@@ -1,0 +1,27 @@
+{
+	"version": 1,
+	"map_name": "Adasta",
+	"map_path": "map_files/Adasta",
+	"map_file": "Adasta.dmm",
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
+	"planetary": 1,
+	"shuttles": {
+		"emergency": "emergency_adasta",
+		"ferry": "ferry_fancy",
+		"whiteship": "whiteship_adasta",
+		"cargo": "cargo_adasta"
+	},
+	"traits": [
+		{
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/dirt/jungle",
+			"No Parallax": true
+		}
+	],
+	"job_changes": {
+		"Captain": {
+			"special_charter": "city"
+		}
+	}
+}

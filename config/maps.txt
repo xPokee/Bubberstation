@@ -88,6 +88,11 @@ map voidraptor
 	votable
 endmap
 
+map adasta
+	minplayers 50
+	votable
+endmap
+
 # Debug-only maps.
 
 map gateway_test
