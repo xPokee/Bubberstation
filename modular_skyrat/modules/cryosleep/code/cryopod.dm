@@ -397,21 +397,35 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 		if(current_highpriest?.resolve() == mob_occupant)
 			reset_religion()
 
+	var/obj/item/card/id/auth_card = mob_occupant.get_idcard()
+	var/off_duty_component = auth_card?.GetComponent(/datum/component/off_duty_timer)
+	var/datum/id_trim/job/plexagon_selfserve_target_trim = /datum/computer_file/program/crew_self_serve::target_trim
+
 	// Delete them from datacore and ghost records.
 	var/announce_rank = null
 
-	for(var/list/record in GLOB.ghost_records)
-		if(record["name"] == stored_name)
-			announce_rank = record["rank"]
-			GLOB.ghost_records.Remove(list(record))
+	for(var/datum/record/crew/possible_target_record as anything in GLOB.manifest.general)
+		if (possible_target_record.name != occupant_name)
+			continue
+
+		var/match_rank = occupant_rank == "N/A" || possible_target_record.trim == occupant_rank
+		var/match_offduty = off_duty_component && possible_target_record.trim == plexagon_selfserve_target_trim.assignment
+
+		if(match_rank || match_offduty)
+			announce_rank = possible_target_record.rank
+			qdel(possible_target_record)
 			break
 
 	if(!announce_rank) // No need to loop over all of those if we already found it beforehand.
-		for(var/datum/record/crew/possible_target_record as anything in GLOB.manifest.general)
-			if(possible_target_record.name == stored_name && (stored_rank == "N/A" || possible_target_record.trim == stored_rank))
-				announce_rank = possible_target_record.rank
-				qdel(possible_target_record)
+		for(var/list/record as anything in GLOB.ghost_records)
+			if(record["name"] == occupant_name)
+				announce_rank = record["rank"]
+				GLOB.ghost_records -= record
 				break
+
+	if (iscyborg(occupant))
+		var/mob/living/silicon/robot/borg = occupant
+		announce_rank = "[borg.designation] Cyborg"
 
 	var/obj/machinery/computer/cryopod/control_computer = control_computer_weakref?.resolve()
 	if(!control_computer)
