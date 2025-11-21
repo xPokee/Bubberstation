@@ -72,9 +72,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 // avian traits
 #define TRAIT_AVIAN "avian_aspect"
 
-// bovine traits
-#define TRAIT_BOVINE "bovine_aspect"
-
 // mouse traits
 #define TRAIT_MURIDAE "mouse_aspect"
 

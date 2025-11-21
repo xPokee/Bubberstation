@@ -1,124 +1,28 @@
-/obj/item/organ/tongue/copy_traits_from(obj/item/organ/tongue/old_tongue, copy_actions = FALSE)
+/obj/item/organ/tongue/copy_traits_from(obj/item/organ/tongue/old_tongue, mob/living/carbon/organ_receiver, copy_actions = FALSE)
 	. = ..()
 	// make sure we get food preferences too, because those are now tied to tongues for some reason
 	liked_foodtypes = old_tongue.liked_foodtypes
 	disliked_foodtypes = old_tongue.disliked_foodtypes
 	toxic_foodtypes = old_tongue.toxic_foodtypes
+	if(!organ_receiver || (!organ_receiver?.client?.prefs?.read_preference(/datum/preference/toggle/has_custom_tongue)))
+		return
+	set_say_modifiers(organ_receiver)
 
-/obj/item/organ/tongue/dog
-	name = "long tongue"
-	desc = "A long and wet tongue. It seems to jump when it's called good, oddly enough."
-	say_mod = "woofs"
-	icon_state = "tongue"
-	modifies_speech = TRUE
-
-/obj/item/organ/tongue/dog/on_mob_insert(mob/living/carbon/signer, special = FALSE, movement_flags = DELETE_IF_REPLACED)
-	. = ..()
-	signer.verb_ask = "arfs"
-	signer.verb_exclaim = "wans"
-	signer.verb_whisper = "whimpers"
-	signer.verb_yell = "barks"
-
-/obj/item/organ/tongue/dog/on_mob_remove(mob/living/carbon/speaker, special = FALSE, movement_flags)
-	. = ..()
-	speaker.verb_ask = initial(verb_ask)
-	speaker.verb_exclaim = initial(verb_exclaim)
-	speaker.verb_whisper = initial(verb_whisper)
-	speaker.verb_sing = initial(verb_sing)
-	speaker.verb_yell = initial(verb_yell)
-
-/obj/item/organ/tongue/cat/on_mob_insert(mob/living/carbon/signer, special = FALSE, movement_flags = DELETE_IF_REPLACED)
-	. = ..()
-	signer.verb_ask = "mrrps"
-	signer.verb_exclaim = "mrrowls"
-	signer.verb_whisper = "purrs"
-	signer.verb_yell = "yowls"
-
-/obj/item/organ/tongue/cat/on_mob_remove(mob/living/carbon/speaker, special = FALSE, movement_flags)
-	. = ..()
-	speaker.verb_ask = initial(verb_ask)
-	speaker.verb_exclaim = initial(verb_exclaim)
-	speaker.verb_whisper = initial(verb_whisper)
-	speaker.verb_yell = initial(verb_yell)
-
-/obj/item/organ/tongue/avian
-	name = "avian tongue"
-	desc = "A short and stubby tongue that craves seeds."
-	say_mod = "chirps"
-	icon_state = "tongue"
-	modifies_speech = TRUE
-
-/obj/item/organ/tongue/avian/on_mob_insert(mob/living/carbon/signer, special = FALSE, movement_flags = DELETE_IF_REPLACED)
-	. = ..()
-	signer.verb_ask = "peeps"
-	signer.verb_exclaim = "squawks"
-	signer.verb_whisper = "murmurs"
-	signer.verb_yell = "shrieks"
-
-/obj/item/organ/tongue/avian/on_mob_remove(mob/living/carbon/speaker, special = FALSE, movement_flags)
-	. = ..()
-	speaker.verb_ask = initial(verb_ask)
-	speaker.verb_exclaim = initial(verb_exclaim)
-	speaker.verb_whisper = initial(verb_whisper)
-	speaker.verb_sing = initial(verb_sing)
-	speaker.verb_yell = initial(verb_yell)
-
-/obj/item/organ/tongue/bovine
-	name = "bovine tongue"
-	desc = "A long and wide tongue that craves grass."
-	say_mod = "moos"
-	icon_state = "tongue"
-	modifies_speech = TRUE
-
-/obj/item/organ/tongue/bovine/on_mob_insert(mob/living/carbon/signer, special = FALSE, movement_flags = DELETE_IF_REPLACED)
-	. = ..()
-	signer.verb_ask = "lows"
-	signer.verb_exclaim = "huffs"
-	signer.verb_whisper = "hums"
-	signer.verb_yell = "brays"
-
-/obj/item/organ/tongue/bovine/on_mob_remove(mob/living/carbon/speaker, special = FALSE, movement_flags)
-	. = ..()
-	speaker.verb_ask = initial(verb_ask)
-	speaker.verb_exclaim = initial(verb_exclaim)
-	speaker.verb_whisper = initial(verb_whisper)
-	speaker.verb_sing = initial(verb_sing)
-	speaker.verb_yell = initial(verb_yell)
-
-/obj/item/organ/tongue/mouse
-	name = "murid tongue"
-	desc = "a short, rough tongue covered in bumps."
-	say_mod = "squeaks"
-	icon_state = "tongue"
-	modifies_speech = TRUE
-
-/obj/item/organ/tongue/mouse/modify_speech(datum/source, list/speech_args)
-	. = ..()
-	var/message = LOWER_TEXT(speech_args[SPEECH_MESSAGE])
-	if(message == "hi" || message == "hi.")
-		speech_args[SPEECH_MESSAGE] = "Cheesed to meet you!"
-	if(message == "hi?")
-		speech_args[SPEECH_MESSAGE] = "Um... cheesed to meet you?"
-
-/obj/item/organ/tongue/mouse/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/speechmod, replacements = strings("mouse_replacement.json", "mouse")) // This is prepawsterous! ...Or something like that.
-
-/obj/item/organ/tongue/mouse/on_mob_insert(mob/living/carbon/tongue_owner, special, movement_flags)
-	. = ..()
-	RegisterSignal(tongue_owner, COMSIG_LIVING_ITEM_GIVEN, PROC_REF(its_on_the_mouse))
-
-/obj/item/organ/tongue/mouse/on_mob_remove(mob/living/carbon/tongue_owner)
-	. = ..()
-	UnregisterSignal(tongue_owner, COMSIG_LIVING_ITEM_GIVEN)
-
-/obj/item/organ/tongue/mouse/proc/on_item_given(mob/living/carbon/offerer, mob/living/taker, obj/item/given)
-	SIGNAL_HANDLER
-	INVOKE_ASYNC(src, PROC_REF(its_on_the_mouse), offerer, taker)
-
-/obj/item/organ/tongue/mouse/proc/its_on_the_mouse(mob/living/carbon/offerer, mob/living/taker)
-	offerer.say("For you, it's on the mouse.")
-	taker.add_mood_event("it_was_on_the_mouse", /datum/mood_event/it_was_on_the_mouse)
+/// Used to set the say modifiers on organ_receiver (ideally a player.) Early returns if the target has a signal listening (runs /datum/quirk/custom_tongue/proc/tongue_setup())
+/obj/item/organ/tongue/proc/set_say_modifiers(mob/living/carbon/organ_receiver, ask, exclaim, whisper, yell, say)
+	var/obj/item/organ/tongue/tongue = organ_receiver.get_organ_slot(ORGAN_SLOT_TONGUE)
+	if(SEND_SIGNAL(organ_receiver, COMSIG_SET_SAY_MODIFIERS))
+		return // Early return so other quirks don't overwrite custom tongue.
+	if(ask)
+		organ_receiver.verb_ask = ask
+	if(exclaim)
+		organ_receiver.verb_exclaim = exclaim
+	if(whisper)
+		organ_receiver.verb_whisper = whisper
+	if(yell)
+		organ_receiver.verb_yell = yell
+	if(say)
+		tongue.say_mod = say
 
 /// This "human" tongue is only used in Character Preferences / Augmentation menu.
 /// The base tongue class lacked a say_mod. With say_mod included it makes a non-Human user sound like a Human.

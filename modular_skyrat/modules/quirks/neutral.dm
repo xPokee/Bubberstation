@@ -229,90 +229,50 @@ GLOBAL_VAR_INIT(DNR_trait_overlay, generate_DNR_trait_overlay())
 
 /datum/quirk/felinid_aspect
 	name = "Felinid Traits"
-	desc = "You happen to act like a felinid, for whatever reason. This will replace other tongue-based quirks."
+	desc = "You happen to act like a felinid, for whatever reason."
 	gain_text = span_notice("Nya could go for some catnip right about now...")
 	lose_text = span_notice("You feel less attracted to lasers.")
 	medical_record_text = "Patient seems to possess behavior much like a felinid."
 	mob_trait = TRAIT_FELINID
 	icon = FA_ICON_CAT
 
-/datum/quirk/felinid_aspect/add_unique(client/client_source)
-	var/mob/living/carbon/human/human_holder = quirk_holder
-	var/obj/item/organ/tongue/cat/new_tongue = new(get_turf(human_holder))
-
-	new_tongue.copy_traits_from(human_holder.get_organ_slot(ORGAN_SLOT_TONGUE))
-	new_tongue.Insert(human_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
-
-/datum/quirk/item_quirk/canine
+/datum/quirk/canine
 	name = "Canidae Traits"
-	desc = "Bark. You seem to act like a canine for whatever reason. This will replace most other tongue-based speech quirks."
+	desc = "Bark. You seem to act like a canine for whatever reason."
 	mob_trait = TRAIT_CANINE
 	icon = FA_ICON_DOG
 	value = 0
 	medical_record_text = "Patient was seen digging through the trash can. Keep an eye on them."
 
-/datum/quirk/item_quirk/canine/add_unique(client/client_source)
-	var/mob/living/carbon/human/human_holder = quirk_holder
-	var/obj/item/organ/tongue/dog/new_tongue = new(get_turf(human_holder))
-
-	new_tongue.copy_traits_from(human_holder.get_organ_slot(ORGAN_SLOT_TONGUE))
-	new_tongue.Insert(human_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
-
-/datum/quirk/item_quirk/avian
+/datum/quirk/avian
 	name = "Avian Traits"
-	desc = "You're a birdbrain, or you've got a bird's brain. This will replace most other tongue-based speech quirks."
+	desc = "You're a birdbrain, or you've got a bird's brain."
 	mob_trait = TRAIT_AVIAN
 	icon = FA_ICON_KIWI_BIRD
 	value = 0
 	medical_record_text = "Patient exhibits avian-adjacent mannerisms."
 
-/datum/quirk/item_quirk/avian/add_unique(client/client_source)
-	var/mob/living/carbon/human/human_holder = quirk_holder
-	var/obj/item/organ/tongue/avian/new_tongue = new(get_turf(human_holder))
-
-	new_tongue.copy_traits_from(human_holder.get_organ_slot(ORGAN_SLOT_TONGUE))
-	new_tongue.Insert(human_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
-
-/datum/quirk/item_quirk/bovine
-	name = "Bovine Traits"
-	desc = "Moo. You seem to act like a bovine for whatever reason. This will replace most other tongue-based speech quirks."
-	mob_trait = TRAIT_BOVINE
-	icon = FA_ICON_COW
-	value = 0
-	medical_record_text = "Patient exhibits bovine-adjacent mannerisms."
-
-/datum/quirk/item_quirk/bovine/add_unique(client/client_source)
-	var/mob/living/carbon/human/human_holder = quirk_holder
-	var/obj/item/organ/tongue/bovine/new_tongue = new(get_turf(human_holder))
-
-	new_tongue.copy_traits_from(human_holder.get_organ_slot(ORGAN_SLOT_TONGUE))
-	new_tongue.Insert(human_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
-
 ///Start of Mouse Traits
-/datum/quirk/item_quirk/mouse
+/datum/quirk/mouse
 	name = "Muridae Traits"
-	desc = "You always thought those jokes were cheesy. This will replace most other tongue-based speech quirks."
+	desc = "You always thought those jokes were cheesy."
 	mob_trait = TRAIT_MURIDAE
 	icon = FA_ICON_CHEESE
 	value = 0
 	medical_record_text = "Patient has an insatiable love for dairy and terrible puns."
 	var/datum/action/cooldown/spell/sniff/sniff_food
 
-/datum/quirk/item_quirk/mouse/add_unique(client/client_source)
+/datum/quirk/mouse/add_unique(client/client_source)
 	var/mob/living/carbon/human/human_holder = quirk_holder
-	var/obj/item/organ/tongue/mouse/new_tongue = new(get_turf(human_holder))
 	human_holder.faction |= FACTION_RAT
 
-	new_tongue.copy_traits_from(human_holder.get_organ_slot(ORGAN_SLOT_TONGUE))
-	new_tongue.Insert(human_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
-
-/datum/quirk/item_quirk/mouse/add(client/client_source)
+/datum/quirk/mouse/add(client/client_source)
 	. = ..()
 
 	sniff_food = new()
 	sniff_food.Grant(quirk_holder)
 
-/datum/quirk/item_quirk/mouse/remove()
+/datum/quirk/mouse/remove()
 	. = ..()
 
 	if(QDELETED(quirk_holder))

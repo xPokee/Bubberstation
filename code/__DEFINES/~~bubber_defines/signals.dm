@@ -44,3 +44,6 @@
 
 /// drink blood via the feed action
 #define COMSIG_MOB_FEED_DRINK "mob_feed_drink"
+
+/// Used to trigger a signal to custom tongue quirk's proc.
+#define COMSIG_SET_SAY_MODIFIERS "set_say_modifiers"
