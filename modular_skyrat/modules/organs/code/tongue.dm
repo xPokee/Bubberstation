@@ -11,8 +11,7 @@
 /// Used to set the say modifiers on organ_receiver (ideally a player.) Early returns if the target has a signal listening (runs /datum/quirk/custom_tongue/proc/tongue_setup())
 /obj/item/organ/tongue/proc/set_say_modifiers(mob/living/carbon/organ_receiver, ask, exclaim, whisper, yell, say)
 	var/obj/item/organ/tongue/tongue = organ_receiver.get_organ_slot(ORGAN_SLOT_TONGUE)
-	if(SEND_SIGNAL(organ_receiver, COMSIG_SET_SAY_MODIFIERS))
-		return // Early return so other quirks don't overwrite custom tongue.
+
 	if(ask)
 		organ_receiver.verb_ask = ask
 	if(exclaim)
@@ -21,7 +20,8 @@
 		organ_receiver.verb_whisper = whisper
 	if(yell)
 		organ_receiver.verb_yell = yell
-	if(say)
+
+	if(say && tongue)
 		tongue.say_mod = say
 
 /// This "human" tongue is only used in Character Preferences / Augmentation menu.

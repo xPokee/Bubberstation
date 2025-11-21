@@ -22,7 +22,7 @@
 	return htmlrendertext(input_text)
 
 /datum/preference/text/custom_tongue/is_accessible(datum/preferences/user_preferences)
-	if (!..())
+	if(!..())
 		return FALSE
 	return user_preferences.read_preference(/datum/preference/toggle/has_custom_tongue)
 
@@ -45,34 +45,27 @@
 	savefile_key = "custom_tongue_say"
 
 /mob/living/carbon/human/proc/apply_custom_tongue_preferences()
-	var/client/human_client = client
-	if(!human_client)
+	if(!client || !client.prefs.read_preference(/datum/preference/toggle/has_custom_tongue))
 		return FALSE
 
-	if(!human_client.prefs.read_preference(/datum/preference/toggle/has_custom_tongue))
-		return FALSE
+	var/custom_ask = client.prefs.read_preference(/datum/preference/text/custom_tongue/ask)
+	var/custom_exclaim = client.prefs.read_preference(/datum/preference/text/custom_tongue/exclaim)
+	var/custom_whisper = client.prefs.read_preference(/datum/preference/text/custom_tongue/whisper)
+	var/custom_yell = client.prefs.read_preference(/datum/preference/text/custom_tongue/yell)
+	var/custom_say = client.prefs.read_preference(/datum/preference/text/custom_tongue/say)
 
-	var/custom_ask = human_client.prefs.read_preference(/datum/preference/text/custom_tongue/ask)
-	if (custom_ask)
+	if(custom_ask)
 		verb_ask = LOWER_TEXT(custom_ask)
-
-	var/custom_exclaim = human_client.prefs.read_preference(/datum/preference/text/custom_tongue/exclaim)
-	if (custom_exclaim)
+	if(custom_exclaim)
 		verb_exclaim = LOWER_TEXT(custom_exclaim)
-
-	var/custom_whisper = human_client.prefs.read_preference(/datum/preference/text/custom_tongue/whisper)
-	if (custom_whisper)
+	if(custom_whisper)
 		verb_whisper = LOWER_TEXT(custom_whisper)
-
-	var/custom_yell = human_client.prefs.read_preference(/datum/preference/text/custom_tongue/yell)
-	if (custom_yell)
+	if(custom_yell)
 		verb_yell = LOWER_TEXT(custom_yell)
 
-	var/custom_say = human_client.prefs.read_preference(/datum/preference/text/custom_tongue/say)
-	if (custom_say)
-		var/obj/item/organ/tongue/tongue_organ = get_organ_slot(ORGAN_SLOT_TONGUE)
-		if(tongue_organ)
-			tongue_organ.say_mod = LOWER_TEXT(custom_say)
+	var/obj/item/organ/tongue/tongue_organ = get_organ_slot(ORGAN_SLOT_TONGUE)
+	if(tongue_organ && custom_say)
+		tongue_organ.say_mod = LOWER_TEXT(custom_say)
 
 	return TRUE
 
@@ -97,3 +90,8 @@
 	SIGNAL_HANDLER
 	apply_custom_tongue_preferences()
 	return
+
+/mob/living/carbon/human/Initialize()
+	. = ..()
+	if(client)
+		register_custom_tongue_signal()
