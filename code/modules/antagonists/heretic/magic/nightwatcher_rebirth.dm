@@ -1,15 +1,14 @@
 /datum/action/cooldown/spell/aoe/fiery_rebirth
 	name = "Nightwatcher's Rebirth"
 	desc = "A spell that extinguishes you and drains nearby heathens engulfed in flames of their life force, \
-		healing you for each victim drained. Those in critical condition \
-		will have the last of their vitality drained, killing them."
+		healing you for each victim drained." // BUBBER EDIT - REMOVES THE BLURB ABOUT EXECUTION
 	background_icon_state = "bg_heretic"
 	overlay_icon_state = "bg_heretic_border"
 	button_icon = 'icons/mob/actions/actions_ecult.dmi'
 	button_icon_state = "smoke"
 
 	school = SCHOOL_FORBIDDEN
-	cooldown_time = 1 MINUTES
+	cooldown_time = 35 SECONDS // BUBBER EDIT - PREVIOUS: 1 MINUTE
 	aoe_radius = 14
 
 	invocation = "GL'RY T' TH' N'GHT'W'TCH'ER."
@@ -50,10 +49,13 @@
 	victim.Beam(caster, icon_state = "r_beam", time = 2 SECONDS)
 
 	//This is essentially a death mark, use this to finish your opponent quicker.
+	/* // BUBBER EDIT - REMOVAL - BEGIN
 	if(CAN_SUCCUMB(victim))
 		victim.investigate_log("has been executed by fiery rebirth.", INVESTIGATE_DEATHS)
 		victim.death()
-	victim.apply_damage(20, BURN)
+	*/ // BUBBER EDIT - REMOVAL - END
+	victim.apply_damage(10, BURN) // BUBBER EDIT - PREVIOUS: 20
+	victim.apply_damage(25, STAMINA) // BUBBER EDIT - ADDITION
 	victim.extinguish_mob()
 
 	// Heal the caster for every victim damaged
