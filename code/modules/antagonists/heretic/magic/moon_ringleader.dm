@@ -74,7 +74,7 @@
 		// We channel the amulet before the "spell effects" so that people don't get converted after 1 clone goes off
 		our_passive?.amulet?.channel_amulet(living_owner, mob)
 
-		mob.AdjustStun(1 SECONDS)
+		mob.AdjustStun(2 SECONDS) // BUBBER EDIT - PREVIOUS: 1 SECONDS
 		mob.AdjustKnockdown(1 SECONDS)
 		mob.adjustOrganLoss(ORGAN_SLOT_BRAIN, 50, 150)
 		mob.mob_mood?.adjust_sanity(-50)
