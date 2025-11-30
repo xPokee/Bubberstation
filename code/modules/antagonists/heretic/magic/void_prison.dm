@@ -1,8 +1,8 @@
 /datum/action/cooldown/spell/pointed/void_prison
 	name = "Void Prison"
-	desc = "Sends a heathen into the void for 10 seconds. \
+	desc = "Sends a heathen into the void for 8 seconds. \
 		They will be unable to perform any actions for the duration. \
-		Afterwards, they will be chilled and returned to the mortal plane."
+		Afterwards, they will be chilled and returned to the mortal plane." // BUBBER EDIT - 10 seconds changed to 8
 	background_icon_state = "bg_heretic"
 	overlay_icon_state = "bg_heretic_border"
 	button_icon = 'icons/mob/actions/actions_ecult.dmi'
@@ -38,7 +38,7 @@
 
 /datum/status_effect/void_prison
 	id = "void_prison"
-	duration = 10 SECONDS
+	duration = 8 SECONDS // BUBBER EDIT - PREVIOUS: 10 SECONDS
 	alert_type = /atom/movable/screen/alert/status_effect/void_prison
 	///The overlay that gets applied to whoever has this status active
 	var/obj/effect/abstract/voidball/stasis_overlay
