@@ -8,7 +8,7 @@
 	sound = null
 
 	school = SCHOOL_FORBIDDEN
-	cooldown_time = 15 SECONDS
+	cooldown_time = 20 SECONDS // BUBBER EDIT - PREVIOUS: 15 SECONDS
 
 	invocation = "ASH'N P'SSG'"
 	invocation_type = INVOCATION_WHISPER
