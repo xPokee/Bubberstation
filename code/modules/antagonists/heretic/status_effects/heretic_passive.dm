@@ -108,7 +108,7 @@
 		"Cooldown of the riposte reduced to 10 seconds."
 	)
 	/// The cooldown before we can riposte again
-	var/base_cooldown = 20 SECONDS
+	var/base_cooldown = 18 SECONDS // BUBBER EDIT - ORIGINAL: 20 SECONDS
 	/// The cooldown reduction gained from upgrading
 	var/cooldown_reduction = 5 SECONDS
 	/// Whether the counter-attack is ready or not.
