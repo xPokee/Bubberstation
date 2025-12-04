@@ -9156,6 +9156,7 @@
 #include "modular_zubbers\code\modules\antagonists\ert\names.dm"
 #include "modular_zubbers\code\modules\antagonists\heretic\heretic.dm"
 #include "modular_zubbers\code\modules\antagonists\heretic\heretic_antag.dm"
+#include "modular_zubbers\code\modules\antagonists\heretic\heretic_knowledge.dm"
 #include "modular_zubbers\code\modules\antagonists\heretic\transmutation_rune.dm"
 #include "modular_zubbers\code\modules\antagonists\heretic\knowledge\starting_lore.dm"
 #include "modular_zubbers\code\modules\antagonists\malf\doomsday.dm"
