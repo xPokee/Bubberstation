@@ -1,7 +1,6 @@
 /datum/unit_test/modular_digitigrade_sprites
 
 /datum/unit_test/modular_digitigrade_sprites/proc/get_folder_of_typepath(typepath)
-	log_test("DEBUG: Starting folder search for [typepath]")
 
 	var/list/modular_folders = list(
 		"modular_skyrat",
@@ -12,7 +11,6 @@
 
 	for(var/folder_name in modular_folders)
 		var/dir = "[folder_name]/"
-		log_test("DEBUG: Checking folder [dir]")
 
 		for(var/file in flist(dir))
 			var/list/files = find_all_dm_files(dir)
