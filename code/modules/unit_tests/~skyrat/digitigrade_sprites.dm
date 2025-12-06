@@ -1,12 +1,10 @@
 /datum/unit_test/modular_digitigrade_sprites
-
-/datum/unit_test/modular_digitigrade_sprites/proc/get_folder_of_typepath(typepath)
-
 	var/list/modular_folders = list(
 		"modular_skyrat",
 		"modular_zubbers",
 	)
 
+/datum/unit_test/modular_digitigrade_sprites/proc/get_folder_of_typepath(typepath)
 	var/typepath_as_string = "[typepath]"
 
 	for(var/folder_name in modular_folders)
@@ -38,7 +36,7 @@
 /datum/unit_test/modular_digitigrade_sprites/Run()
 	for(var/type in subtypesof(/obj/item/clothing/under))
 		var/folder = get_folder_of_typepath(type)
-		if(!(folder == "modular_zubbers" || folder == "modular_skyrat"))
+		if(!(folder in modular_folders))
 			continue
 
 		var/obj/item/clothing/under/item
