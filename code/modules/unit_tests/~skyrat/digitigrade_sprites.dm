@@ -1,25 +1,24 @@
 /datum/unit_test/modular_digitigrade_sprites
+	var/list/typepath_files = list()
+
 	var/list/modular_folders = list(
 		"modular_skyrat",
 		"modular_zubbers",
 	)
 
-/datum/unit_test/modular_digitigrade_sprites/proc/get_folder_of_typepath(typepath)
-	var/typepath_as_string = "[typepath]"
-
+/datum/unit_test/modular_digitigrade_sprites/proc/get_folders_of_typepaths()
 	for(var/folder_name in modular_folders)
 		var/dir = "[folder_name]/"
 
 		for(var/file in flist(dir))
+			typepath_files |= file
+
 			var/list/files = find_all_dm_files(dir)
 
 			for(var/full_path in files)
 				var/text = rustg_file_read(full_path)
 				if(!text)
 					continue
-
-				if(findtext(text, typepath_as_string))
-					return folder_name
 
 	return null
 
@@ -35,9 +34,7 @@
 
 /datum/unit_test/modular_digitigrade_sprites/Run()
 	for(var/type in subtypesof(/obj/item/clothing/under))
-		var/folder = get_folder_of_typepath(type)
-		if(!(folder in modular_folders))
-			continue
+		do get_folders_of_typepaths(type)
 
 		var/obj/item/clothing/under/item
 		try
