@@ -1,0 +1,1 @@
+/datum/unit_test/modular_digitigrade_sprites
