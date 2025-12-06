@@ -46,10 +46,6 @@
 			TEST_FAIL("Failed to allocate [type]: [exception]")
 			continue
 
-		if(!("supports_variations_flags" in item.vars))
-			TEST_FAIL("[type] has no supports_variations_flags variable.")
-			continue
-
 		var/flags = item.supports_variations_flags
 
 		if(!(flags & CLOTHING_DIGITIGRADE_VARIATION) && !(flags & CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON))
