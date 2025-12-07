@@ -1,17 +1,16 @@
 /datum/unit_test/modular_digitigrade_sprites
-	var/list/typepath_files = list()
-
+	var/type_to_test = /obj/item/clothing/under
 	var/list/modular_folders = list(
 		"modular_skyrat",
 		"modular_zubbers",
 	)
 
 /datum/unit_test/modular_digitigrade_sprites/proc/get_folders_of_typepaths()
+	var/typepath_files = list()
 	for(var/folder_name in modular_folders)
 		var/dir = "[folder_name]/"
 
 		for(var/file in flist(dir))
-			typepath_files |= file
 
 			var/list/files = find_all_dm_files(dir)
 
@@ -19,8 +18,17 @@
 				var/text = rustg_file_read(full_path)
 				if(!text)
 					continue
+				typepath_files |= parse_typepaths_from_text(text)
 
-	return null
+	return typepath_files
+
+/datum/unit_test/modular_digitigrade_sprites/proc/parse_typepaths_from_text(text)
+	var/type_string = "[type_to_test]"
+	// escape the slashes in the typepath itself to make it valid for regex
+	type_string = replace(type_string, "/", "\/")
+	var/regex/regex = new Regex("[type_string]\[^\s\n\]*")
+	var/list/matches = regex.Find(text)
+	return matches
 
 /datum/unit_test/modular_digitigrade_sprites/proc/find_all_dm_files(dir)
 	var/list/results = list()
@@ -33,19 +41,13 @@
 	return results
 
 /datum/unit_test/modular_digitigrade_sprites/Run()
-	for(var/type in subtypesof(/obj/item/clothing/under))
-		var/folder = get_folders_of_typepaths(type)
-		if(!(folder in modular_folders))
+	var/list/typepath_files = get_folders_of_typepaths()
+
+	for(var/obj/item/clothing/under/valid_subtype as anything in subtypesof(/obj/item/clothing/under))
+		var/subtype_string = "[valid_subtype]"
+		if(!(subtype_string in typepath_files))
 			continue
 
-		var/obj/item/clothing/under/item
-		try
-			item = allocate(type)
-		catch(var/exception)
-			TEST_FAIL("Failed to allocate [type]: [exception]")
-			continue
-
-		var/flags = item.supports_variations_flags
-
+		var/flags = valid_subtype::supports_variations_flags
 		if(!(flags & CLOTHING_DIGITIGRADE_VARIATION) && !(flags & CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON))
 			TEST_FAIL("[type] is missing required digitigrade variation flags.")
