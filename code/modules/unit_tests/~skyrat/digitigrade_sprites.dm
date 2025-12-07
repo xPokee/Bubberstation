@@ -34,7 +34,7 @@
 
 /datum/unit_test/modular_digitigrade_sprites/Run()
 	for(var/type in subtypesof(/obj/item/clothing/under))
-		var/folder = get_folder_of_typepath(type)
+		var/folder = get_folders_of_typepaths(type)
 		if(!(folder in modular_folders))
 			continue
 
