@@ -26,8 +26,8 @@
 	var/type_string = "[type_to_test]"
 	// escape the slashes in the typepath itself to make it valid for regex
 	type_string = replacetext(type_string, "/", "\\/")
-	var/regex/regex = new regex("[type_string]\[^\s\n\]*")
-	var/list/matches = regex.Find(text)
+	var/regex/matcher = new("[type_string]\[^\s\n\]*")
+	var/list/matches = matcher.Find(text)
 	return matches
 
 /datum/unit_test/modular_digitigrade_sprites/proc/find_all_dm_files(dir)
