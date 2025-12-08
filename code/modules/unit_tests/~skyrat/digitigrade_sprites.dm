@@ -25,7 +25,7 @@
 /datum/unit_test/modular_digitigrade_sprites/proc/parse_typepaths_from_text(text)
 	var/type_string = "[type_to_test]"
 	// escape the slashes in the typepath itself to make it valid for regex
-	type_string = replace(type_string, "/", "\/")
+	type_string = replacetext(type_string, "/", "\\/")
 	var/regex/regex = new Regex("[type_string]\[^\s\n\]*")
 	var/list/matches = regex.Find(text)
 	return matches
