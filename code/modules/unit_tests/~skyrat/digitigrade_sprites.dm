@@ -18,6 +18,9 @@
 				var/text = rustg_file_read(full_path)
 				if(!text)
 					continue
+				var/list/matches = parse_typepaths_from_text(text)
+				if(!length(matches))
+					continue
 				typepath_files |= parse_typepaths_from_text(text)
 
 	return typepath_files
@@ -26,9 +29,10 @@
 	var/type_string = "[type_to_test]"
 	// escape the slashes in the typepath itself to make it valid for regex
 	type_string = replacetext(type_string, "/", "\\/")
-	var/regex/matcher = new("[type_string]\[^\s\n\]*")
-	var/list/matches = matcher.Find(text)
-	return matches
+	var/regex/matcher = regex(type_string + @"[^s\n]*")
+	if(!matcher.Find(text))
+		return list()
+	return matcher.group
 
 /datum/unit_test/modular_digitigrade_sprites/proc/find_all_dm_files(dir)
 	var/list/results = list()
