@@ -50,4 +50,4 @@
 
 		var/flags = valid_subtype::supports_variations_flags
 		if(!(flags & CLOTHING_DIGITIGRADE_VARIATION) && !(flags & CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON))
-			TEST_FAIL("[type] is missing required digitigrade variation flags.")
+			TEST_FAIL("[subtype_stringtype] is missing required digitigrade variation flags.")
