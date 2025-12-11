@@ -262,6 +262,10 @@ GLOBAL_VAR(restart_counter)
 /world/Topic(T, addr, master, key)
 	TGS_TOPIC //redirect to server tools if necessary
 
+	// BUBBER EDIT - ADDITION: VOICE CHAT - START
+	if(addr == "127.0.0.1" && SSvoicechat)
+		SSvoicechat.handle_topic(T , addr)
+	// BUBBER EDIT - ADDITION: VOICE CHAT - END
 	var/static/list/topic_handlers = TopicHandlers()
 
 	var/list/input = params2list(T)
@@ -336,6 +340,10 @@ GLOBAL_VAR(restart_counter)
 				return FALSE
 
 /world/Reboot(reason = 0, fast_track = FALSE)
+	// BUBBER EDIT - ADDITION: VOICE CHAT - START
+	if(SSvoicechat && SSvoicechat.initialized)
+		SSvoicechat.Shutdown()
+	// BUBBER EDIT - ADDITION: VOICE CHAT - END
 	if (reason || fast_track) //special reboot, do none of the normal stuff
 		if (usr)
 			log_admin("[key_name(usr)] Has requested an immediate world restart via client side debugging tools")
@@ -369,6 +377,10 @@ GLOBAL_VAR(restart_counter)
 	#endif
 
 /world/Del()
+	// BUBBER EDIT - ADDITION: VOICE CHAT - START
+	if(SSvoicechat && SSvoicechat.initialized)
+		SSvoicechat.Shutdown()
+	// BUBBER EDIT - ADDITION: VOICE CHAT - END
 	QDEL_NULL(Tracy)
 	QDEL_NULL(Debugger)
 	. = ..()
