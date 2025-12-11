@@ -27,7 +27,7 @@ I dont understand most ss13 build systems so you will have to run a few commands
     * `cd voicechat/pipes && make`
     * the only thing stopping me from making this crossplatform, is that I couldnt figure out how to make socket DLL for windows.
 3. install **node dependencies**
-    * while this **could be done through TGS** I dont understand it, so I use something more retard proof like **node** to handle signaling and hosting static webpage
+    * while this **could be done through TGS** I dont understand it, so I use something more idiot proof like **node** to handle signaling and hosting static webpage
     * `cd ../node && npm install`
 4. verify it worked
     * to **test node**, run `node voicechat/node/server/main.js`

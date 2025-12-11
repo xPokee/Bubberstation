@@ -30,7 +30,7 @@ SUBSYSTEM_DEF(voicechat)
 	//holds a normal list of all the ckeys and list of all usercodes that muted that ckey
 	var/list/ckey_muted_by = alist()
 	//node server path
-	var/const/node_path = "voicechat/node/server/main.js"
+	var/const/node_path = "modular_zubbers/voicechat/node/server/main.js"
 	//library path set in get lib path
 	var/lib_path
 	//if you have a domain, put it here.
@@ -56,8 +56,8 @@ SUBSYSTEM_DEF(voicechat)
 	return SS_INIT_SUCCESS
 
 /datum/controller/subsystem/voicechat/proc/set_lib_path()
-	var/const/lib_path_unix = "voicechat/pipes/unix/byondsocket"
-	var/const/lib_path_win = "voicechat/pipes/windows/byondsocket/Release/byondsocket"
+	var/const/lib_path_unix = "modular_zubbers/voicechat/pipes/unix/byondsocket"
+	var/const/lib_path_win = "modular_zubbers/voicechat/pipes/windows/byondsocket/Release/byondsocket"
 	if(world.system_type == MS_WINDOWS)
 		lib_path = lib_path_win
 	else
@@ -80,9 +80,9 @@ SUBSYSTEM_DEF(voicechat)
 	var/node_port = CONFIG_GET(number/port_voicechat)
 	if(!node_port)
 		CRASH("bad port option specified in config {node_port: [node_port || "null"]}")
-	var/cmd = "node [src.node_path] --node-port=[node_port] --byond-port=[byond_port] --byond-pid=[world.process] &"
+	var/cmd = "node [src.node_path] --node-port=[node_port] --byond-port=[byond_port] --byond-pid=[world.log] &"
 	if(world.system_type == MS_WINDOWS) // ape shit insane but its ok :)
-		cmd = "powershell.exe -Command \"Start-Process -FilePath 'node' -ArgumentList '[src.node_path]','--node-port=[node_port]','--byond-port=[byond_port]', '--byond-pid=[world.process]'\""
+		cmd = "powershell.exe -Command \"Start-Process -FilePath 'node' -ArgumentList '[src.node_path]','--node-port=[node_port]','--byond-port=[byond_port]', '--byond-pid=[world.log]'\""
 	var/exit_code = shell(cmd)
 	if(exit_code != 0)
 		CRASH("launching node failed {exit_code: [exit_code || "null"], cmd: [cmd || "null"]}")
