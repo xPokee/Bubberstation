@@ -42,6 +42,7 @@ function disconnectAllClients(io) {
         data: 'Disconnected: Disconnecting all clients',
       });
       socket.disconnect(true);
+      revokeCredential(sessionId);
     });
   }, 2000);
 }

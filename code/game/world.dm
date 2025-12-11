@@ -260,11 +260,11 @@ GLOBAL_VAR(restart_counter)
 #endif
 
 /world/Topic(T, addr, master, key)
-	TGS_TOPIC //redirect to server tools if necessary
-
 	// BUBBER EDIT - ADDITION: VOICE CHAT - START
 	if(addr == "127.0.0.1" && SSvoicechat)
 		SSvoicechat.handle_topic(T , addr)
+
+	TGS_TOPIC //redirect to server tools if necessary
 	// BUBBER EDIT - ADDITION: VOICE CHAT - END
 	var/static/list/topic_handlers = TopicHandlers()
 
