@@ -212,3 +212,7 @@
 /datum/loadout_item/toys/lewd/aeri
 	name = "Interdimensional Terrorist Plushie"
 	item_path = /obj/item/toy/plush/aeri
+
+/datum/loadout_item/toys/lewd/portal_fleshlight
+	name = "Portal Device and Underwear"
+	item_path = /obj/item/storage/box/erp/portal_fleshlight

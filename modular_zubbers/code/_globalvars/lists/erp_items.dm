@@ -56,4 +56,7 @@ GLOBAL_LIST_INIT(erp_items, list(
 	/obj/item/tickle_feather,
 	/obj/item/toy/plush/aeri,
 	/obj/item/vending_refill/lustwish,
+	/obj/item/storage/box/portal_fleshlight,
+	/obj/item/clothing/sextoy/portal_panties,
+	/obj/item/clothing/sextoy/portal_fleshlight,
 ))
