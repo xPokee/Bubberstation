@@ -3,6 +3,7 @@
 	id = "long range pda"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT*1.5, /datum/material/glass = SMALL_MATERIAL_AMOUNT*1.5)
+	transfered_materials = list(/obj/item/stock_parts/power_store/cell/upgraded = /obj/item/stock_parts/power_store/cell/upgraded::custom_materials)
 	build_path = /obj/item/modular_computer/pda/long_range
 	category = list(
 		RND_CATEGORY_MODULAR_COMPUTERS
