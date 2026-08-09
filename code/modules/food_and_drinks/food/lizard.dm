@@ -881,7 +881,7 @@
 	)
 	trash_type = /obj/item/trash/can/food/desert_snails
 	tastes = list("snails" = 1)
-	foodtypes = MEAT | VEGETABLES | RAW | BUGS
+	foodtypes = MEAT | GORE
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/canned/larvae
