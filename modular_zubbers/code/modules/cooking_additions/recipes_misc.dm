@@ -64,6 +64,12 @@
 	icon_state = "raw_meatloaf"
 	foodtypes = MEAT | VEGETABLES | RAW
 
+/obj/item/food/canned/chap
+	foodtypes = MEAT | VEGETABLES | RAW
+
+/obj/item/food/cnds
+	foodtypes = JUNKFOOD | SUGAR
+
 /// Healthy foods that the food processor pops out. Mostly to get the food_processor unit test all happy.
 /obj/item/food/peanuts/healthy
 	name = "organic peanuts"
@@ -117,7 +123,7 @@
 	name = "snail mix"
 	desc = "A mass of seasoned meat, ready to be processed... DO NOT CONFUSE WITH TRAIL MIX!"
 	icon_state = "raw_meatloaf"
-	foodtypes = MEAT | VEGETABLES | RAW | BUGS
+	foodtypes = MEAT | GORE
 
 /datum/food_processor_process/desertsnails
 	input = /obj/item/food/meat/snailmix
