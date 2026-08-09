@@ -64,10 +64,10 @@
 	icon_state = "raw_meatloaf"
 	foodtypes = MEAT | VEGETABLES | RAW
 
-/obj/item/food/canned/chap
+/obj/item/food/canned/chap/processed
 	foodtypes = MEAT | VEGETABLES | RAW
 
-/obj/item/food/cnds
+/obj/item/food/cnds/processed
 	foodtypes = JUNKFOOD | SUGAR
 
 /// Healthy foods that the food processor pops out. Mostly to get the food_processor unit test all happy.
@@ -82,11 +82,11 @@
 
 /datum/food_processor_process/chap
 	input = /obj/item/food/meat/chapmix
-	output = /obj/item/food/canned/chap
+	output = /obj/item/food/canned/chap/processed
 
 /datum/food_processor_process/chocolate
 	input = /obj/item/food/chocolatebar
-	output = /obj/item/food/cnds
+	output = /obj/item/food/cnds/processed
 
 /datum/food_processor_process/peanut
 	input = /obj/item/food/grown/peanut
@@ -123,11 +123,14 @@
 	name = "snail mix"
 	desc = "A mass of seasoned meat, ready to be processed... DO NOT CONFUSE WITH TRAIL MIX!"
 	icon_state = "raw_meatloaf"
-	foodtypes = MEAT | GORE
+	foodtypes = MEAT | VEGETABLES | RAW | BUGS
+
+/obj/item/food/canned/desert_snails/processed
+	foodtypes = MEAT | VEGETABLES | RAW | BUGS
 
 /datum/food_processor_process/desertsnails
 	input = /obj/item/food/meat/snailmix
-	output = /obj/item/food/canned/desert_snails
+	output = /obj/item/food/canned/desert_snails/processed
 	food_multiplier = 2 //Giving a 2x multiplier as bug meat is slightly rarer to come across once you've killed all the snails.
 
 /datum/crafting_recipe/food/mac_balls_fresh
