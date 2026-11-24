@@ -83,7 +83,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "aey" = (
-/obj/machinery/door/window/brigdoor/security/cell/southleft{
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/south{
 	id = "brig2";
 	name = "Cell 2"
 	},
@@ -356,7 +356,7 @@
 	icon_state = "hoteldoor";
 	name = "Universe 20850C- Paradise Station"
 	},
-/area/cordon)
+/area/misc/cordon)
 "awr" = (
 /obj/structure/chair/stool{
 	dir = 4
@@ -641,8 +641,7 @@
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "aIb" = (
-/obj/machinery/door/window{
-	dir = 1;
+/obj/machinery/door/window/left/directional/north{
 	name = "Register"
 	},
 /turf/open/floor/mineral/titanium,
@@ -882,7 +881,7 @@
 /area/event/snowy_forest)
 "aWN" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/chair/sofa/bench/right{
 	dir = 1
 	},
@@ -986,7 +985,7 @@
 /turf/open/floor/mineral/titanium,
 /area/event/snowy_forest)
 "bcW" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "bdp" = (
@@ -1068,9 +1067,7 @@
 /area/event/snowy_forest)
 "bgk" = (
 /obj/structure/rack,
-/obj/structure/sign/poster/official/foam_force_ad{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/foam_force_ad/directional/north,
 /obj/item/gun/ballistic/automatic/toy/unrestricted{
 	pixel_x = 4;
 	pixel_y = 4
@@ -1162,7 +1159,7 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "bmF" = (
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/chair/greyscale{
 	dir = 1
@@ -1587,8 +1584,7 @@
 /obj/item/toy/plush/lizard_plushie/green{
 	name = "Sold-as-Promotional"
 	},
-/obj/structure/sign/poster/contraband/lizard{
-	pixel_x = -32;
+/obj/structure/sign/poster/contraband/lizard/directional/west{
 	pixel_y = -8
 	},
 /obj/effect/turf_decal/siding/red{
@@ -1679,7 +1675,7 @@
 /area/event/snowy_forest)
 "bTk" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Carriage 4"
 	},
 /obj/effect/mapping_helpers/airlock/locked,
@@ -1920,9 +1916,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/cohiba_robusto_ad{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/north,
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "chr" = (
@@ -2308,7 +2302,7 @@
 	},
 /area/event/snowy_forest)
 "cBB" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/stonebrick{
 	color = "#ccaf9d"
 	},
@@ -2402,7 +2396,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "cIi" = (
@@ -3017,7 +3011,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "dsm" = (
@@ -3062,9 +3056,7 @@
 "dxu" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade,
-/obj/structure/sign/poster/official/fruit_bowl{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/fruit_bowl/directional/north,
 /turf/open/floor/stone,
 /area/event/snowy_forest)
 "dxV" = (
@@ -3174,7 +3166,7 @@
 /area/event/snowy_forest)
 "dDE" = (
 /obj/structure/rack,
-/obj/item/toy/plush/space_lizard_plushie{
+/obj/item/toy/plush/lizard_plushie/space/green{
 	name = "Vesk-And-Loaded"
 	},
 /turf/open/floor/iron,
@@ -3381,7 +3373,7 @@
 	icon_state = "hoteldoor";
 	name = "Universe 68265- Shiptest"
 	},
-/area/cordon)
+/area/misc/cordon)
 "dKw" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -3417,7 +3409,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/event/snowy_forest)
 "dMA" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Weaver's"
 	},
 /obj/effect/turf_decal/siding/wood,
@@ -3480,7 +3472,7 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/event/snowy_forest)
 "dPO" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/stone,
 /area/event/snowy_forest)
 "dPT" = (
@@ -3871,8 +3863,7 @@
 /area/event/snowy_forest)
 "eiP" = (
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/machinery/door/window{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "Driver Seat"
 	},
 /obj/structure/chair/comfy/shuttle{
@@ -3881,10 +3872,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/event/snowy_forest)
 "ejb" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 1;
-	icon_state = "singular"
-	},
+/obj/structure/broken_flooring/singular/directional/north,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -3916,7 +3904,7 @@
 /area/event/snowy_forest)
 "ekg" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/clothing/mask/cigarette/pipe,
+/obj/item/cigarette/pipe,
 /turf/open/floor/iron/white/smooth_large,
 /area/event/snowy_forest)
 "ele" = (
@@ -3954,7 +3942,7 @@
 /turf/open/floor/wood/parquet,
 /area/event/snowy_forest)
 "enU" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Weaver's"
 	},
 /turf/open/floor/wood,
@@ -4191,17 +4179,15 @@
 	},
 /area/event/snowy_forest)
 "eCD" = (
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 4
-	},
-/obj/structure/window/reinforced/tinted/frosted,
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/east,
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/south,
 /obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/iron/checker,
 /area/event/snowy_forest)
 "eCV" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Donk Co. Toy Outlet"
 	},
 /obj/effect/turf_decal/siding/wood,
@@ -4228,9 +4214,7 @@
 "eDW" = (
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/delivery,
-/obj/structure/sign/poster/random{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/random/directional/west,
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "eEr" = (
@@ -4563,7 +4547,7 @@
 /area/event/snowy_forest)
 "eYb" = (
 /obj/structure/table/wood/shuttle_bar,
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/stonebrick{
 	color = "#ccaf9d"
 	},
@@ -4582,7 +4566,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "eYH" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Das Kaffeehaus"
 	},
 /obj/effect/turf_decal/siding/wood,
@@ -4626,7 +4610,7 @@
 /area/event/snowy_forest)
 "eZF" = (
 /obj/structure/chair,
-/obj/item/clothing/head/bowler,
+/obj/item/clothing/head/hats/bowler,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -4759,9 +4743,7 @@
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "fmd" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 8
-	},
+/obj/structure/broken_flooring/corner/directional/west,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -4786,9 +4768,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "fnK" = (
-/obj/structure/fluff/broken_flooring{
-	icon_state = "singular"
-	},
+/obj/structure/broken_flooring/singular/directional/south,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -5357,7 +5337,7 @@
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "fVy" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Overflowing Stein"
 	},
 /obj/effect/turf_decal/siding/wood,
@@ -5648,9 +5628,7 @@
 /area/event/snowy_forest)
 "goq" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
-/obj/structure/sign/poster/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/random/directional/east,
 /turf/open/floor/iron/cafeteria,
 /area/event/snowy_forest)
 "goR" = (
@@ -5781,7 +5759,7 @@
 /obj/item/clothing/head/helmet/redtaghelm,
 /obj/item/clothing/head/helmet/redtaghelm,
 /obj/item/clothing/head/helmet/redtaghelm,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
@@ -5881,10 +5859,6 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/event/snowy_forest)
-"gvW" = (
-/obj/machinery/vending/boozeomat/all_access,
-/turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "gwK" = (
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -6193,14 +6167,8 @@
 /turf/open/floor/iron/grimy,
 /area/event/snowy_forest)
 "gRe" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 1;
-	icon_state = "singular"
-	},
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "singular"
-	},
+/obj/structure/broken_flooring/singular/directional/north,
+/obj/structure/broken_flooring/singular/directional/east,
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /turf/open/indestructible/white{
 	density = 1;
@@ -6458,7 +6426,7 @@
 /area/event/snowy_forest)
 "hcD" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Carriage 6"
 	},
 /obj/effect/mapping_helpers/airlock/locked,
@@ -6550,7 +6518,7 @@
 	icon_state = "hoteldoor";
 	name = "Universe 20842- Unitystation"
 	},
-/area/cordon)
+/area/misc/cordon)
 "hgz" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
@@ -6701,9 +6669,7 @@
 	},
 /area/event/snowy_forest)
 "hop" = (
-/obj/structure/sign/poster/official/love_ian{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/official/love_ian/directional/south,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/carpet/royalblack,
 /area/event/snowy_forest)
@@ -6736,9 +6702,7 @@
 /obj/structure/sink{
 	pixel_y = 17
 	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/east,
 /turf/open/floor/iron/freezer,
 /area/event/snowy_forest)
 "hpL" = (
@@ -6842,7 +6806,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/machinery/door/window/brigdoor/security/cell/westleft{
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/west{
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
@@ -7040,7 +7004,7 @@
 /turf/open/floor/carpet/red,
 /area/event/snowy_forest)
 "hQi" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Weaver's"
 	},
 /turf/open/floor/wood/large,
@@ -7067,7 +7031,7 @@
 /obj/structure/rack,
 /obj/item/clothing/shoes/wheelys/rollerskates,
 /obj/item/clothing/shoes/wheelys/rollerskates,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod,
 /area/event/snowy_forest)
 "hSw" = (
@@ -7249,16 +7213,12 @@
 /turf/open/floor/stone,
 /area/event/snowy_forest)
 "icv" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/north,
 /turf/open/floor/iron/cafeteria,
 /area/event/snowy_forest)
 "icM" = (
 /obj/structure/table/wood/shuttle_bar,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "icW" = (
@@ -7321,7 +7281,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "ifh" = (
-/obj/machinery/door/window/brigdoor/security/cell/southleft{
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/south{
 	id = "brig3";
 	name = "Cell 3"
 	},
@@ -7400,9 +7360,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "ikB" = (
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/vault/rock,
 /area/event/snowy_forest)
 "ikR" = (
@@ -7507,7 +7465,7 @@
 /area/event/snowy_forest)
 "inb" = (
 /obj/structure/table/abductor,
-/obj/item/clothing/mask/cigarette/rollie/cannabis{
+/obj/item/cigarette/rollie/cannabis{
 	pixel_y = 5
 	},
 /obj/item/lighter/greyscale{
@@ -7827,7 +7785,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "iGW" = (
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/chair/sofa/bench/left{
 	dir = 1
 	},
@@ -8180,7 +8138,7 @@
 "jfO" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	dir = 4
 	},
 /turf/open/floor/pod,
@@ -8318,9 +8276,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/cleanliness{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/cleanliness/directional/north,
 /turf/open/floor/iron/dark/textured,
 /area/event/snowy_forest)
 "jnT" = (
@@ -8398,7 +8354,7 @@
 /area/event/snowy_forest)
 "juU" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Carriage 2"
 	},
 /turf/open/floor/wood,
@@ -8980,9 +8936,7 @@
 /obj/effect/holodeck_effect/cards{
 	pixel_y = 4
 	},
-/obj/structure/sign/poster/contraband/lusty_xenomorph{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/west,
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "kaQ" = (
@@ -9004,7 +8958,7 @@
 /area/event/snowy_forest)
 "kbu" = (
 /obj/structure/curtain/cloth/fancy,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
@@ -9037,7 +8991,7 @@
 /turf/open/floor/circuit/green/anim,
 /area/event/snowy_forest)
 "keC" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Weaver's"
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -9062,11 +9016,11 @@
 	},
 /area/event/snowy_forest)
 "khy" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/mineral/titanium/white,
 /area/event/snowy_forest)
 "khR" = (
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/chair/sofa/bench{
 	dir = 1
 	},
@@ -9277,7 +9231,7 @@
 /area/event/snowy_forest)
 "krN" = (
 /obj/structure/table/wood/shuttle_bar,
-/obj/item/clothing/mask/cigarette/xeno,
+/obj/item/cigarette/xeno,
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "krW" = (
@@ -9501,9 +9455,7 @@
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/west,
 /turf/open/floor/wood/sauna,
 /area/event/snowy_forest)
 "kGk" = (
@@ -9658,7 +9610,7 @@
 /area/event/snowy_forest)
 "kQd" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Carriage 4"
 	},
 /turf/open/floor/wood,
@@ -9861,9 +9813,7 @@
 /obj/effect/turf_decal/tile/random{
 	dir = 1
 	},
-/obj/structure/sign/poster/random{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/random/directional/west,
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "laH" = (
@@ -9879,9 +9829,7 @@
 /obj/structure/sink{
 	pixel_y = 17
 	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/west,
 /turf/open/floor/iron/freezer,
 /area/event/snowy_forest)
 "lbm" = (
@@ -10024,7 +9972,7 @@
 /turf/open/floor/mineral/titanium,
 /area/event/snowy_forest)
 "lhC" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Overflowing Stein"
 	},
 /obj/effect/turf_decal/siding/wood,
@@ -10096,8 +10044,8 @@
 /area/event/snowy_forest)
 "lmu" = (
 /obj/structure/table/abductor,
-/obj/item/clothing/mask/cigarette/rollie/cannabis,
-/obj/item/clothing/mask/cigarette/rollie/cannabis{
+/obj/item/cigarette/rollie/cannabis,
+/obj/item/cigarette/rollie/cannabis{
 	pixel_y = 5
 	},
 /obj/item/lighter{
@@ -10567,7 +10515,7 @@
 	dir = 5
 	},
 /obj/structure/table,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/cup/glass/mug{
 	pixel_x = -5;
 	pixel_y = 7
@@ -10803,7 +10751,7 @@
 /area/event/snowy_forest)
 "lZK" = (
 /obj/item/bikehorn/rubberducky,
-/obj/item/clothing/head/santa{
+/obj/item/clothing/head/costume/santa{
 	pixel_x = 2;
 	pixel_y = 9
 	},
@@ -10959,7 +10907,7 @@
 /turf/open/floor/plating/snowed,
 /area/event/snowy_forest)
 "mjI" = (
-/obj/machinery/door/window/brigdoor/security/cell/southleft{
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/south{
 	id = "brig1";
 	name = "Cell 1"
 	},
@@ -11115,9 +11063,7 @@
 /turf/open/floor/carpet/red,
 /area/event/snowy_forest)
 "mtU" = (
-/obj/structure/fluff/broken_flooring{
-	icon_state = "pile"
-	},
+/obj/structure/broken_flooring/pile/directional/south,
 /obj/structure/sign/directions/supply{
 	dir = 1;
 	pixel_y = 40
@@ -11280,7 +11226,7 @@
 /obj/item/melee/skateboard/pro,
 /obj/item/melee/skateboard/pro,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod,
 /area/event/snowy_forest)
 "mBv" = (
@@ -11312,7 +11258,7 @@
 "mCS" = (
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/item/toy/plush/space_lizard_plushie{
+/obj/item/toy/plush/lizard_plushie/space/green{
 	pixel_x = 5;
 	pixel_y = -4
 	},
@@ -11389,11 +11335,11 @@
 	},
 /area/event/snowy_forest)
 "mGY" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/event/snowy_forest)
 "mHK" = (
-/obj/structure/window/reinforced/tinted/frosted,
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/south,
 /obj/machinery/shower{
 	dir = 4
 	},
@@ -11890,7 +11836,7 @@
 /area/event/snowy_forest)
 "nii" = (
 /obj/structure/flora/tree/jungle/small,
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -12380,9 +12326,7 @@
 /turf/open/misc/sandy_dirt,
 /area/event/snowy_forest)
 "nIZ" = (
-/obj/structure/sign/poster/official/help_others{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/help_others/directional/north,
 /obj/structure/rack,
 /obj/item/soap,
 /obj/item/soap,
@@ -12827,7 +12771,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/event/snowy_forest)
 "ohZ" = (
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -12893,7 +12837,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "olF" = (
-/obj/machinery/door/window/brigdoor/security/cell/westleft,
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/west,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
@@ -12953,10 +12897,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "onN" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "singular"
-	},
+/obj/structure/broken_flooring/singular/directional/east,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -13232,7 +13173,7 @@
 	},
 /area/event/snowy_forest)
 "oEe" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "oEh" = (
@@ -13391,7 +13332,7 @@
 /area/event/snowy_forest)
 "oMu" = (
 /obj/structure/table/wood/fancy,
-/obj/item/clothing/head/hardhat/cakehat,
+/obj/item/clothing/head/utility/hardhat/cakehat,
 /turf/open/floor/carpet,
 /area/event/snowy_forest)
 "oMU" = (
@@ -13561,10 +13502,10 @@
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "oTI" = (
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 2
 	},
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 2
 	},
 /obj/effect/turf_decal/siding/wood,
@@ -13601,7 +13542,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/book/manual/wiki/barman_recipes,
-/obj/item/reagent_containers/cup/rag,
+/obj/item/rag,
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "oUX" = (
@@ -13937,7 +13878,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/cup/rag,
+/obj/item/rag,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "pmm" = (
@@ -14121,7 +14062,7 @@
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "pzD" = (
@@ -14325,15 +14266,11 @@
 	pixel_x = -12;
 	pixel_y = -7
 	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/north,
 /turf/open/floor/iron/cafeteria,
 /area/event/snowy_forest)
 "pLY" = (
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/iron/cafeteria,
 /area/event/snowy_forest)
 "pMj" = (
@@ -14572,7 +14509,7 @@
 "qaU" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/shoes/wheelys/rollerskates,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod,
 /area/event/snowy_forest)
 "qbf" = (
@@ -14726,7 +14663,7 @@
 /area/event/snowy_forest)
 "qjO" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Staff Carriage"
 	},
 /obj/effect/mapping_helpers/airlock/locked,
@@ -14864,7 +14801,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	pixel_y = 25
 	},
 /turf/open/floor/wood/large,
@@ -14964,10 +14901,7 @@
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "qvw" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "side"
-	},
+/obj/structure/broken_flooring/side/directional/east,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -15089,7 +15023,7 @@
 	icon_state = "hoteldoor";
 	name = "Universe 68258- Citadel Station"
 	},
-/area/cordon)
+/area/misc/cordon)
 "qBm" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 4
@@ -15109,10 +15043,7 @@
 	},
 /area/event/snowy_forest)
 "qDj" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 1;
-	icon_state = "pile"
-	},
+/obj/structure/broken_flooring/pile/directional/north,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -15247,9 +15178,7 @@
 /turf/open/floor/holofloor/beach,
 /area/event/snowy_forest)
 "qLb" = (
-/obj/structure/sign/poster/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/random/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/event/snowy_forest)
 "qLg" = (
@@ -15775,9 +15704,7 @@
 /turf/open/floor/plating/abductor,
 /area/event/snowy_forest)
 "rrX" = (
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 1
-	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/north,
 /obj/structure/curtain/cloth{
 	name = "Changing Room"
 	},
@@ -15927,7 +15854,7 @@
 	dir = 9
 	},
 /obj/machinery/vending/coffee,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/iron/cafeteria,
 /area/event/snowy_forest)
@@ -16044,7 +15971,7 @@
 	dir = 6
 	},
 /obj/item/kirbyplants/random,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "rGb" = (
@@ -16098,9 +16025,7 @@
 /turf/open/floor/stone,
 /area/event/snowy_forest)
 "rJa" = (
-/obj/structure/sign/poster/official/cohiba_robusto_ad{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/north,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
@@ -16587,7 +16512,7 @@
 /area/event/snowy_forest)
 "skQ" = (
 /turf/open/floor/wood/tile,
-/area/cordon)
+/area/misc/cordon)
 "sln" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -16812,9 +16737,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/space_cube{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/contraband/space_cube/directional/north,
 /turf/open/floor/carpet/royalblack,
 /area/event/snowy_forest)
 "sxU" = (
@@ -16888,9 +16811,7 @@
 /obj/effect/turf_decal/tile/random{
 	dir = 1
 	},
-/obj/structure/sign/poster/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/random/directional/east,
 /obj/item/plate/large,
 /obj/item/food/cake/holy_cake,
 /turf/open/floor/iron/white,
@@ -16941,7 +16862,7 @@
 /turf/open/misc/sandy_dirt,
 /area/event/snowy_forest)
 "sBo" = (
-/obj/item/clothing/suit/nerdshirt{
+/obj/item/clothing/suit/costume/nerdshirt{
 	desc = "I searched the entire map, found the secret keycard, used it to enter the secret vault, and all I got was this stupid t-shirt.";
 	name = "prize shirt"
 	},
@@ -17179,7 +17100,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "sPw" = (
@@ -17308,7 +17229,7 @@
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "sVk" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/wood/parquet,
 /area/event/snowy_forest)
 "sWk" = (
@@ -17408,7 +17329,7 @@
 /area/event/snowy_forest)
 "tbW" = (
 /obj/structure/chair,
-/obj/item/clothing/mask/cigarette,
+/obj/item/cigarette,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -17898,9 +17819,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "tCU" = (
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 1
-	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/north,
 /obj/structure/mirror/directional/west,
 /turf/open/floor/iron/checker,
 /area/event/snowy_forest)
@@ -17940,7 +17859,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
 /area/event/snowy_forest)
 "tEs" = (
@@ -18146,9 +18065,7 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/event/snowy_forest)
 "tOH" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/east,
 /turf/open/floor/iron/freezer,
 /area/event/snowy_forest)
 "tQj" = (
@@ -18229,7 +18146,7 @@
 /obj/item/hemostat{
 	pixel_x = -4
 	},
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/latex,
 /obj/item/clothing/mask/surgical,
 /obj/item/surgicaldrill,
 /obj/item/cautery,
@@ -18316,7 +18233,7 @@
 /area/event/snowy_forest)
 "tVH" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Carriage 2"
 	},
 /obj/effect/mapping_helpers/airlock/locked,
@@ -19127,7 +19044,7 @@
 	icon_state = "bluespace";
 	name = "fabric of the Harverse"
 	},
-/area/cordon)
+/area/misc/cordon)
 "uIZ" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/neutral{
@@ -19278,7 +19195,7 @@
 	pixel_x = 3;
 	pixel_y = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod,
 /area/event/snowy_forest)
 "uPP" = (
@@ -19766,7 +19683,7 @@
 /area/event/snowy_forest)
 "vuC" = (
 /turf/open/floor/carpet/royalblack,
-/area/cordon)
+/area/misc/cordon)
 "vvh" = (
 /obj/structure/hedge,
 /turf/open/floor/vault/rock,
@@ -19789,9 +19706,7 @@
 /obj/effect/turf_decal/tile/random{
 	dir = 1
 	},
-/obj/structure/sign/poster/random{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/random/directional/west,
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "vwh" = (
@@ -19980,7 +19895,7 @@
 	dir = 4
 	},
 /obj/structure/table,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/cup/glass/mug{
 	pixel_x = -5;
 	pixel_y = 21
@@ -20086,7 +20001,7 @@
 /turf/open/floor/carpet/green,
 /area/event/snowy_forest)
 "vLE" = (
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/machinery/modular_computer/console/preset/civilian{
@@ -20180,9 +20095,7 @@
 	},
 /area/event/snowy_forest)
 "vSF" = (
-/obj/structure/fluff/broken_flooring{
-	icon_state = "side"
-	},
+/obj/structure/broken_flooring/side/directional/south,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -20244,7 +20157,7 @@
 	},
 /area/event/snowy_forest)
 "vYm" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Overflowing Stein"
 	},
 /turf/open/floor/wood,
@@ -20308,7 +20221,7 @@
 	icon_state = "bluespace";
 	name = "tear in the Harverse"
 	},
-/area/cordon)
+/area/misc/cordon)
 "wbN" = (
 /obj/effect/turf_decal/siding/wideplating/light/corner,
 /obj/structure/railing/corner,
@@ -20616,7 +20529,7 @@
 /turf/open/floor/circuit/off,
 /area/event/snowy_forest)
 "wwd" = (
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/iron/stairs{
 	dir = 1
 	},
@@ -21002,7 +20915,7 @@
 "wPh" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
-/obj/machinery/door/window/southright{
+/obj/machinery/door/window/right/directional/south{
 	dir = 4
 	},
 /obj/item/reagent_containers/cup/glass/mug/coco,
@@ -21111,9 +21024,7 @@
 /turf/closed/wall/mineral/diamond,
 /area/event/snowy_forest)
 "wWr" = (
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
 	},
@@ -21259,9 +21170,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/event/snowy_forest)
 "xeY" = (
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 4
-	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/east,
 /obj/structure/chair{
 	dir = 8
 	},
@@ -21303,7 +21212,7 @@
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/event/snowy_forest)
 "xgJ" = (
-/obj/machinery/door/airlock/glass_large,
+/obj/machinery/door/airlock/multi_tile/public/glass,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "xhx" = (
@@ -21461,7 +21370,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "xnz" = (
@@ -21925,7 +21834,7 @@
 	opacity = 1
 	},
 /turf/open/misc/sandy_dirt,
-/area/cordon)
+/area/misc/cordon)
 "xHD" = (
 /obj/structure/statue/sandstone/assistant{
 	pixel_y = 9
@@ -21981,10 +21890,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/event/snowy_forest)
 "xKK" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "pile"
-	},
+/obj/structure/broken_flooring/pile/directional/east,
 /turf/open/indestructible/white{
 	density = 1;
 	desc = "Within the infinite voids of the Harverse are many wonderful things.";
@@ -22035,9 +21941,7 @@
 /obj/effect/turf_decal/tile/random{
 	dir = 1
 	},
-/obj/structure/sign/poster/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/random/directional/east,
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "xMX" = (
@@ -71745,7 +71649,7 @@ jEJ
 jEJ
 nuv
 rkT
-gvW
+prZ
 pJx
 jjr
 qHG
