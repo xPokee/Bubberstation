@@ -249,9 +249,6 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 
 /datum/quiplash_manager/proc/get_answer(mob/player)
 	set waitfor = FALSE
-	var/fallback_value = tgui_input_text_async(player, "[current_prompt]", "Write your answer!", "", callback = CALLBACK(src,.proc/answer_made), timeout = answer_time)
-	if(fallback_value) //this is only for the people with tgui pref off
-		answer_made(fallback_value, player)
 
 /datum/quiplash_manager/proc/display_answers()
 	log_game("Quiplash Question: [current_prompt]")
@@ -308,7 +305,7 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 	audience_members |= new_audience_member
 	RegisterSignal(new_audience_member,COMSIG_MOB_SAY, .proc/listen_to_vote)
 	RegisterSignal(new_audience_member,COMSIG_EXIT_AREA, .proc/audience_member_left_area)
-	RegisterSignal(new_audience_member,COMSIG_PARENT_QDELETING, .proc/audience_member_deleted)
+	RegisterSignal(new_audience_member,COMSIG_QDELETING, .proc/audience_member_deleted)
 
 	var/datum/action/quiplash_opt_out/opt_out_action = new
 	opt_out_action.game = src
@@ -330,7 +327,7 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 /datum/quiplash_manager/proc/remove_audience_member(mob/audience_member)
 	to_chat(audience_member,span_notice("You're no longer part of the audience."))
 	audience_members -= audience_member
-	UnregisterSignal(audience_member,list(COMSIG_MOB_SAY,COMSIG_EXIT_AREA,COMSIG_PARENT_QDELETING))
+	UnregisterSignal(audience_member,list(COMSIG_MOB_SAY,COMSIG_EXIT_AREA,COMSIG_QDELETING))
 	for(var/datum/action/to_be_deleted in audience_member.actions)
 		if(to_be_deleted.type == /datum/action/quiplash_opt_out || to_be_deleted.type == /datum/action/quiplash_look_at_stage)
 			qdel(to_be_deleted)
@@ -355,11 +352,6 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 	var/basic_name = player.real_name
 	if(regex_cache[basic_name])
 		search_regex = regex_cache[basic_name]
-	else
-		var/first_name = REGEX_QUOTE(player.first_name())
-		var/last_name = REGEX_QUOTE(player.last_name())
-		var/simplified_name = REGEX_QUOTE(simplify_name(basic_name))
-		regex_cache[basic_name] = search_regex = regex("[basic_name]|[first_name]|[last_name]|[simplified_name]|[lizardify_message(basic_name)]|[lizardify_message(first_name)]|[lizardify_message(last_name)]|[lizardify_message(simplified_name)]", "i")
 	if(findtext(message,search_regex))
 		return TRUE
 	var/answer = answers[player]
@@ -410,7 +402,7 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 	maptext_x = -128 + 16
 	maptext_y = 35
 
-	plane = GAME_PLANE_UPPER
+	plane = ABOVE_GAME_PLANE
 	layer = ABOVE_MOB_LAYER
 
 	var/game_index = DEFAULT_GAME_INDEX
@@ -509,12 +501,12 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 /// Players get teleported here
 /obj/effect/landmark/quiplash_stage_marker
 	name = "quiplash stage"
-	icon = 'modular_event/winter_ball_2021/quiplash/quiplash.dmi'
+	icon = 'modular_zzevent/winter_ball/quiplash/quiplash.dmi'
 	icon_state = "mic"
 	invisibility = 0
 	// Player prompts gets displayed on these
 
-	plane = GAME_PLANE_UPPER
+	plane = ABOVE_GAME_PLANE
 	layer = ABOVE_MOB_LAYER + 0.1
 	pixel_y = -5 //change this when sprite changes
 
@@ -544,10 +536,10 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 /obj/effect/winner_crown
 	name = "WINNER"
 	desc = "Winner below"
-	icon = 'modular_event/winter_ball_2021/quiplash/quiplash.dmi'
+	icon = 'modular_zzevent/winter_ball/quiplash/quiplash.dmi'
 	icon_state = "crown"
 	pixel_y = 28
-	plane = GAME_PLANE_UPPER
+	plane = ABOVE_GAME_PLANE
 	layer = ABOVE_MOB_LAYER
 	vis_flags = NONE
 	var/filter_time = 4000
@@ -560,7 +552,7 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 
 
 /obj/effect/temp_visual/confetti
-	icon = 'modular_event/winter_ball_2021/quiplash/quiplash.dmi'
+	icon = 'modular_zzevent/winter_ball/quiplash/quiplash.dmi'
 	icon_state = "confetti" //replace with confetti temp visual
 	duration = 30
 
@@ -585,7 +577,7 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 /datum/action/quiplash_opt_out
 	name = "Opt out of playing"
 	desc = "Press this if you do not want to be a player and just observe."
-	icon_icon = 'modular_event/winter_ball_2021/quiplash/quiplash.dmi'
+	button_icon = 'modular_zzevent/winter_ball/quiplash/quiplash.dmi'
 	button_icon_state = "mic_enabled"
 	var/datum/quiplash_manager/game
 
@@ -599,14 +591,14 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 		name = initial(name)
 		desc = initial(desc)
 		button_icon_state = initial(button_icon_state)
-		UpdateButtonIcon()
+		build_all_button_icons(UPDATE_BUTTON_ICON)
 	else
 		game.opted_out_audience += owner.ckey
 		to_chat(owner,"You will now be ignored when picking out players for the game. Press this button again to turn this off.")
 		name = "Opt in"
 		desc = "Click to be considered for playing again"
 		button_icon_state = "mic_disabled"
-		UpdateButtonIcon()
+		build_all_button_icons(UPDATE_BUTTON_ICON)
 
 /area/event/snowy_forest/quiplash_audience
 	name = "quiplash audience area"
@@ -615,7 +607,7 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 /datum/action/quiplash_look_at_stage
 	name = "Focus on the stage"
 	desc = "Press this to look at the stage."
-	icon_icon = 'icons/obj/items_and_weapons.dmi'
+	button_icon = 'icons/obj/devices/tool.dmi'
 	button_icon_state = "binoculars"
 	var/datum/quiplash_manager/game
 	var/toggled = FALSE

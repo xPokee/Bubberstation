@@ -1,7 +1,7 @@
 /datum/action/cooldown/quiplash_teleport
 	name = "Teleport to Quiplash"
 	desc = "Teleport to play Quiplash."
-	icon_icon = 'icons/mob/actions/actions_minor_antag.dmi'
+	button_icon = 'icons/mob/actions/actions_minor_antag.dmi'
 	button_icon_state = "beam_up"
 
 	// Prevents them from teleporting while on stage

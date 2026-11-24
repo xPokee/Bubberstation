@@ -10838,4 +10838,10 @@
 #include "modular_zzevent\base\station_traits.dm"
 #include "modular_zzevent\base\vending_safety.dm"
 #include "modular_zzevent\winter_ball\plaque.dm"
+#include "modular_zzevent\winter_ball\corn\corn.dm"
+#include "modular_zzevent\winter_ball\quiplash\quiplash.dm"
+#include "modular_zzevent\winter_ball\quiplash\quiplash_teleport.dm"
+#include "modular_zzevent\winter_ball\snowy_forest\area.dm"
+#include "modular_zzevent\winter_ball\snowy_forest\no_slowdown.dm"
+#include "modular_zzevent\winter_ball\snowy_forest\snowy_forest.dm"
 // END_INCLUDE

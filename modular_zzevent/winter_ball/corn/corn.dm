@@ -1,9 +1,9 @@
 /obj/effect/cornfield
 	name = "cornfield"
 	desc = "just a cornfield..."
-	plane = GAME_PLANE_UPPER
+	plane = ABOVE_GAME_PLANE
 	layer = ABOVE_MOB_LAYER
-	icon = 'modular_event/winter_ball_2021/corn/corn.dmi'
+	icon = 'modular_zzevent/winter_ball/corn/corn.dmi'
 	icon_state = "corn"
 
 /obj/effect/cornfield/Initialize(mapload)
@@ -19,7 +19,7 @@
 /obj/effect/cornfield_monster
 	name = "cornfield monster"
 	invisibility = INVISIBILITY_ABSTRACT
-	icon = 'modular_event/winter_ball_2021/corn/corn.dmi'
+	icon = 'modular_zzevent/winter_ball/corn/corn.dmi'
 	icon_state = "monster"
 
 	/// Decides which path points we'll use
@@ -39,7 +39,7 @@
 
 	update_patrol()
 
-/obj/effect/cornfield_monster/Moved(atom/OldLoc, Dir)
+/obj/effect/cornfield_monster/Moved(atom/OldLoc, Dir, momentum_change = TRUE)
 	. = ..()
 	var/obj/effect/landmark/cornfield_monster_drop_point/drop_point
 	for(var/mob/living/lunch in loc)
@@ -55,7 +55,7 @@
 
 /obj/effect/cornfield_monster/proc/update_patrol()
 	var/list/patrol_points = get_patrol_points()
-	SSmove_manager.move_to_patrol(src, patrol_points, delay = move_delay)
+	GLOB.move_manager.move_to_patrol(src, patrol_points, delay = move_delay)
 
 /obj/effect/cornfield_monster/proc/get_patrol_points()
 	var/list/points = list()
@@ -86,7 +86,7 @@
 	invisibility = INVISIBILITY_ABSTRACT
 	var/monster_id = "A"
 
-/datum/controller/subsystem/move_manager/proc/move_to_patrol(moving, list/patrol_points , min_dist, delay, timeout, subsystem, priority, flags, datum/extra_info)
+/datum/move_manager/proc/move_to_patrol(moving, list/patrol_points , min_dist, delay, timeout, subsystem, priority, flags, datum/extra_info)
 	return add_to_loop(moving, subsystem, /datum/move_loop/has_target/dist_bound/move_to/patrol, priority, flags, extra_info, delay, timeout, patrol_points[1], min_dist, patrol_points)
 
 
