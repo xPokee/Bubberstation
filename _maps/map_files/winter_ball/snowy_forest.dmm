@@ -6451,8 +6451,8 @@
 /turf/open/floor/carpet/red,
 /area/event/snowy_forest)
 "hes" = (
-/turf/open/misc/beach/coastline_t/sandwater_inner{
-	dir = 8
+/turf/open/floor/holofloor/beach/coast/corner{
+	dir = 1
 	},
 /area/event/snowy_forest)
 "heL" = (
@@ -6628,7 +6628,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "hol" = (
-/turf/open/misc/beach/coastline_t/sandwater_inner{
+/turf/open/floor/holofloor/beach/coast/corner{
 	dir = 4
 	},
 /area/event/snowy_forest)
@@ -7482,8 +7482,8 @@
 /turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "ipX" = (
-/turf/open/misc/beach/coastline_t/sandwater_inner{
-	dir = 1
+/turf/open/floor/holofloor/beach/coast/corner{
+	dir = 8
 	},
 /area/event/snowy_forest)
 "iqz" = (
@@ -16143,7 +16143,7 @@
 /turf/open/floor/plating/airless,
 /area/event/snowy_forest)
 "rPD" = (
-/turf/open/misc/beach/coastline_t/sandwater_inner,
+/turf/open/floor/holofloor/beach/coast/corner,
 /area/event/snowy_forest)
 "rQb" = (
 /obj/machinery/door/airlock,
