@@ -32,7 +32,7 @@
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "abo" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1;
 	name = "well-seasoned banquette"
 	},
@@ -262,7 +262,7 @@
 /turf/open/floor/iron/stairs,
 /area/event/snowy_forest)
 "asr" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/bamboo,
@@ -989,7 +989,7 @@
 	},
 /area/event/snowy_forest)
 "beh" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4;
 	name = "well-seasoned banquette"
 	},
@@ -1107,7 +1107,7 @@
 /turf/open/floor/vault/rock,
 /area/event/snowy_forest)
 "bjy" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/wood/parquet,
@@ -1421,7 +1421,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/event/snowy_forest)
 "bFU" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/eighties/red,
 /area/event/snowy_forest)
 "bFZ" = (
@@ -2061,7 +2061,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "cpp" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4;
 	name = "well-seasoned banquette"
 	},
@@ -3268,7 +3268,7 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/event/snowy_forest)
 "dIn" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 8
 	},
 /turf/open/floor/bamboo,
@@ -3296,7 +3296,7 @@
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "dJJ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/wood/parquet,
@@ -3589,7 +3589,7 @@
 /turf/open/floor/mineral/titanium,
 /area/event/snowy_forest)
 "dYu" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /obj/structure/railing{
@@ -3696,7 +3696,7 @@
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "ecH" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/wood/parquet,
@@ -4284,7 +4284,7 @@
 /turf/open/floor/carpet/red,
 /area/event/snowy_forest)
 "eLB" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8;
 	name = "well-seasoned banquette"
 	},
@@ -4514,7 +4514,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "eXB" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
@@ -6155,7 +6155,7 @@
 /turf/open/floor/plating/snowed,
 /area/event/snowy_forest)
 "gSO" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -6376,7 +6376,7 @@
 	},
 /area/event/snowy_forest)
 "hcz" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -6584,7 +6584,7 @@
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "hlo" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/red{
@@ -7060,7 +7060,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "hXy" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	name = "well-seasoned banquette"
 	},
 /turf/open/floor/wood,
@@ -7239,7 +7239,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/event/snowy_forest)
 "ifd" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	name = "well-seasoned banquette"
 	},
 /turf/open/floor/wood,
@@ -7269,7 +7269,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "ifV" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8;
 	name = "well-seasoned banquette"
 	},
@@ -7398,7 +7398,7 @@
 /turf/open/floor/mineral/titanium,
 /area/event/snowy_forest)
 "imi" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/bamboo,
@@ -7999,7 +7999,7 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "iXE" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/wood/large,
@@ -8334,7 +8334,7 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "jwj" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/wood/parquet,
 /area/event/snowy_forest)
 "jwK" = (
@@ -8541,7 +8541,7 @@
 /turf/closed/indestructible/rock/snow/ice/ore,
 /area/event/snowy_forest)
 "jFf" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4;
 	name = "well-seasoned banquette"
 	},
@@ -8900,7 +8900,7 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "kaQ" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4;
 	name = "well-seasoned banquette"
 	},
@@ -9227,7 +9227,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/event/snowy_forest)
 "kti" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/wood/parquet,
@@ -9393,7 +9393,7 @@
 /turf/open/misc/ice,
 /area/event/snowy_forest)
 "kEN" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/mineral/abductor,
@@ -9660,7 +9660,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "kWl" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -9680,7 +9680,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "kWW" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	name = "well-seasoned banquette"
 	},
 /obj/effect/turf_decal/siding/red{
@@ -10114,7 +10114,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "luK" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/plating/abductor,
@@ -10364,7 +10364,7 @@
 /turf/closed/indestructible/hotelwall,
 /area/event/snowy_forest)
 "lJz" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57";
 	dir = 8
 	},
@@ -10456,7 +10456,7 @@
 /turf/open/floor/carpet/green,
 /area/event/snowy_forest)
 "lPi" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
@@ -10790,7 +10790,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "met" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -10879,7 +10879,7 @@
 /turf/open/misc/ice,
 /area/event/snowy_forest)
 "mjN" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 8;
 	name = "well-seasoned banquette"
 	},
@@ -11569,7 +11569,7 @@
 /turf/open/floor/iron/freezer,
 /area/event/snowy_forest)
 "mXd" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57";
 	dir = 8
 	},
@@ -11870,7 +11870,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/event/snowy_forest)
 "nlY" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /turf/open/floor/wood/parquet,
 /area/event/snowy_forest)
 "nmE" = (
@@ -11946,7 +11946,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "noZ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4;
 	name = "well-seasoned banquette"
 	},
@@ -12202,7 +12202,7 @@
 /turf/open/floor/carpet,
 /area/event/snowy_forest)
 "nDS" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57";
 	dir = 1
 	},
@@ -12469,7 +12469,7 @@
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "nSh" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /obj/structure/railing{
@@ -12618,7 +12618,7 @@
 /turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "oax" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/wood/parquet,
@@ -12830,7 +12830,7 @@
 /turf/open/floor/vault/rock,
 /area/event/snowy_forest)
 "onb" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57";
 	dir = 8
 	},
@@ -12840,7 +12840,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/event/snowy_forest)
 "onc" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57";
 	dir = 4
 	},
@@ -13852,13 +13852,13 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/event/snowy_forest)
 "pmQ" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /turf/open/floor/wood/parquet,
 /area/event/snowy_forest)
 "pny" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/bamboo,
 /area/event/snowy_forest)
 "pnE" = (
@@ -14102,7 +14102,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "pFz" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /turf/open/floor/eighties/red,
 /area/event/snowy_forest)
 "pFB" = (
@@ -14342,7 +14342,7 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "pTy" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /obj/structure/railing{
 	dir = 4
 	},
@@ -14844,7 +14844,7 @@
 	},
 /area/event/snowy_forest)
 "quX" = (
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/middle/brown,
 /obj/effect/turf_decal/siding/red{
 	dir = 1
 	},
@@ -15020,7 +15020,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "qDO" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	color = "#c45c57";
 	dir = 4
 	},
@@ -15864,7 +15864,7 @@
 	},
 /area/event/snowy_forest)
 "rCZ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1;
 	name = "well-seasoned banquette"
 	},
@@ -16015,14 +16015,14 @@
 /turf/open/misc/ice,
 /area/event/snowy_forest)
 "rLH" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57";
 	dir = 1
 	},
 /turf/open/floor/stone,
 /area/event/snowy_forest)
 "rLL" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/corner/brown,
 /turf/open/floor/bamboo,
 /area/event/snowy_forest)
 "rMd" = (
@@ -16079,7 +16079,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "rNC" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/plating/abductor,
@@ -16503,7 +16503,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/event/snowy_forest)
 "smR" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1;
 	name = "well-seasoned banquette"
 	},
@@ -16867,7 +16867,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/event/snowy_forest)
 "sGN" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	name = "well-seasoned banquette"
 	},
 /turf/open/floor/wood,
@@ -17029,7 +17029,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/event/snowy_forest)
 "sNV" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8;
 	name = "well-seasoned banquette"
 	},
@@ -17292,7 +17292,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "tdr" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	name = "well-seasoned banquette"
 	},
 /turf/open/floor/wood,
@@ -17664,7 +17664,7 @@
 /turf/open/misc/ice,
 /area/event/snowy_forest)
 "txz" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
@@ -18065,7 +18065,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "tSe" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/mineral/abductor,
@@ -18307,7 +18307,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "ucu" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -18598,7 +18598,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "uqf" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8;
 	name = "well-seasoned banquette"
 	},
@@ -19079,7 +19079,7 @@
 /turf/open/floor/mineral/titanium,
 /area/event/snowy_forest)
 "uME" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 1;
 	name = "well-seasoned banquette"
 	},
@@ -19297,7 +19297,7 @@
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "vaX" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -19955,7 +19955,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "vLX" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/bamboo,
@@ -19995,7 +19995,7 @@
 /turf/open/floor/catwalk_floor/iron_white,
 /area/event/snowy_forest)
 "vPY" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
@@ -20413,7 +20413,7 @@
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
 "wsl" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	color = "#c45c57";
 	dir = 8
 	},
@@ -20444,7 +20444,7 @@
 /turf/open/floor/plating/snowed,
 /area/event/snowy_forest)
 "wuI" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
 /turf/open/floor/bamboo,
@@ -20940,7 +20940,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "wUZ" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 1
 	},
 /turf/open/floor/wood/parquet,
@@ -20970,7 +20970,7 @@
 /turf/open/floor/vault/rock,
 /area/event/snowy_forest)
 "wWw" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /turf/open/floor/bamboo,
@@ -21052,7 +21052,7 @@
 /turf/open/floor/wood/parquet,
 /area/event/snowy_forest)
 "xaM" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 1;
 	name = "well-seasoned banquette"
 	},
@@ -21215,7 +21215,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "xjC" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
 /obj/structure/railing{
@@ -21611,7 +21611,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "xAW" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 4
 	},
 /turf/open/floor/bamboo,
@@ -21631,7 +21631,7 @@
 	},
 /area/event/snowy_forest)
 "xBT" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 4;
 	name = "well-seasoned banquette"
 	},
@@ -21932,7 +21932,7 @@
 	},
 /area/event/snowy_forest)
 "xPA" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 8
 	},
 /obj/item/storage/briefcase{
@@ -21995,7 +21995,7 @@
 /turf/open/floor/carpet/red,
 /area/event/snowy_forest)
 "xUM" = (
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/corner/brown{
 	dir = 1
 	},
 /turf/open/floor/bamboo,
@@ -22071,7 +22071,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "xXa" = (
-/obj/structure/chair/sofa/left,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/bamboo,
 /area/event/snowy_forest)
 "xXi" = (
@@ -22116,7 +22116,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "xZB" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/wood/large,

@@ -15,6 +15,7 @@
 	#include "map_files\CatwalkStation\CatwalkStation_2023.dmm"
 	#include "map_files\NebulaStation\NebulaStation.dmm"
 	#include "map_files\KiloStation\KiloStation.dmm"
+	#include "map_files\winter_ball\snowy_forest.dmm"
 	// BUBBER EDIT ADDITON START - Compiling our modular maps too!
 	#include "map_files\Blueshift\Blueshift.dmm"
 	#include "map_files\VoidRaptor\VoidRaptor.dmm"

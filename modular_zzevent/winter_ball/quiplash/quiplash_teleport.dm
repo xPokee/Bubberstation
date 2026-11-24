@@ -19,7 +19,7 @@
 		return FALSE
 
 	var/turf/user_turf = get_turf(usr)
-	playsound(user_turf, 'sound/magic/warpwhistle.ogg', 200, vary = TRUE)
+	playsound(user_turf, 'sound/effects/magic/warpwhistle.ogg', 200, vary = TRUE)
 	new /obj/effect/temp_visual/quiplash_teleport_tornado(user_turf)
 
 	usr.forceMove(get_safe_random_station_turf(list(audience_area)))
@@ -31,7 +31,7 @@
 	return TRUE
 
 /obj/effect/temp_visual/quiplash_teleport_tornado
-	icon = 'icons/obj/wizard.dmi'
+	icon = 'icons/effects/magic.dmi'
 	icon_state = "tornado"
 	name = "tornado"
 	desc = "This thing sucks!"

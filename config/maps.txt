@@ -103,3 +103,6 @@ endmap
 
 map eventmap
 endmap
+
+map snowy_forest
+endmap

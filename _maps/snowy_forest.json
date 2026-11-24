@@ -1,7 +1,7 @@
 {
 	"version": 1,
 	"map_name": "Snowy Forest",
-	"map_path": "winter_ball",
+	"map_path": "map_files/winter_ball",
 	"map_file": "snowy_forest.dmm",
 	"traits": [
 		{

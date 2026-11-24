@@ -390,7 +390,7 @@ GLOBAL_LIST_EMPTY(quiplash_games)
 
 /obj/structure/quiplash_statue
 	name = "Quiplash"
-	icon = 'icons/obj/statue.dmi'
+	icon = 'icons/obj/art/statue.dmi'
 	icon_state = "clown"
 	anchored = TRUE
 	density = TRUE

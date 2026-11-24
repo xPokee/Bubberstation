@@ -1,19 +1,19 @@
 /turf/open/floor/stonebrick
 	name = "stone brick path"
-	icon = 'modular_event/winter_ball_2021/snowy_forest/stonebrick.dmi'
+	icon = 'modular_zzevent/winter_ball/snowy_forest/stonebrick.dmi'
 	icon_state = "stonebrick"
 	base_icon_state = "stonebrick"
 
 /obj/structure/fluff/christmas_lamp
 	name = "decorative lamp post"
 	desc = "A lamp post decorated with a festive reef."
-	icon = 'modular_event/winter_ball_2021/snowy_forest/2x2.dmi'
+	icon = 'modular_zzevent/winter_ball/snowy_forest/2x2.dmi'
 	icon_state = "lightpost"
 	anchored = TRUE
 	deconstructible = FALSE
 
 /obj/effect/decal/turf_decal/shadow
-	icon = 'modular_event/winter_ball_2021/snowy_forest/shadow.dmi'
+	icon = 'modular_zzevent/winter_ball/snowy_forest/shadow.dmi'
 	icon_state = "shadow_decal"
 
 /obj/effect/decal/turf_decal/shadow/corner
@@ -21,7 +21,7 @@
 
 /obj/structure/sign/departments/hotspring
 	name = "\improper Hotspring sign"
-	icon = 'modular_event/winter_ball_2021/snowy_forest/onsen.dmi'
+	icon = 'modular_zzevent/winter_ball/snowy_forest/onsen.dmi'
 	icon_state = "onsen"
 	sign_change_name = "Hotspring"
 	desc = "A sign signifying a medicinal hotspring. It has the operating hours carved into it."
@@ -39,7 +39,7 @@
 	desc = "A sign designating the sauna. It says tattoos are prohibited."
 
 /obj/structure/curtain/hotspring
-	icon = 'modular_event/winter_ball_2021/snowy_forest/onsen.dmi'
+	icon = 'modular_zzevent/winter_ball/snowy_forest/onsen.dmi'
 	color = null
 	alpha = 255
 	opaque_closed = TRUE
