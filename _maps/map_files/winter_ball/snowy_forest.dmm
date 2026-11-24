@@ -40,7 +40,6 @@
 /area/event/snowy_forest)
 "abW" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/clothing/under/suit/blacktwopiece,
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "acI" = (
@@ -88,13 +87,6 @@
 	name = "Cell 2"
 	},
 /turf/open/floor/iron/dark,
-/area/event/snowy_forest)
-"aft" = (
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "afA" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -223,10 +215,6 @@
 /obj/structure/chair/wood{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "ank" = (
@@ -254,9 +242,6 @@
 "apY" = (
 /obj/item/kirbyplants/organic/plant21,
 /turf/open/floor/carpet/red,
-/area/event/snowy_forest)
-"aqb" = (
-/turf/open/floor/holofloor/beach/water,
 /area/event/snowy_forest)
 "aqJ" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -518,7 +503,7 @@
 	pixel_x = 6;
 	pixel_y = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "aDP" = (
 /obj/structure/bed/double,
@@ -737,13 +722,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/event/snowy_forest)
-"aRt" = (
-/obj/effect/turf_decal/weather/snow/corner,
-/obj/structure/big_delivery,
-/turf/open/floor/holofloor/snow{
-	icon_state = "snow_dug"
-	},
-/area/event/snowy_forest)
 "aRW" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
@@ -911,8 +889,8 @@
 /area/event/snowy_forest)
 "aXR" = (
 /obj/structure/closet/secure_closet/freezer/fridge/open,
-/obj/item/food/canned_jellyfish,
-/obj/item/food/canned_jellyfish,
+/obj/item/food/canned/jellyfish,
+/obj/item/food/canned/jellyfish,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "aXY" = (
@@ -1068,18 +1046,18 @@
 "bgk" = (
 /obj/structure/rack,
 /obj/structure/sign/poster/official/foam_force_ad/directional/north,
-/obj/item/gun/ballistic/automatic/toy/unrestricted{
+/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted{
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/gun/ballistic/automatic/toy/unrestricted{
+/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted{
 	pixel_x = 4;
 	pixel_y = 2
 	},
-/obj/item/gun/ballistic/automatic/toy/unrestricted{
+/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted{
 	pixel_x = 4
 	},
-/obj/item/gun/ballistic/automatic/toy/unrestricted{
+/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted{
 	pixel_x = 4;
 	pixel_y = -2
 	},
@@ -1386,7 +1364,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "bEu" = (
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
@@ -1521,14 +1499,14 @@
 	pixel_x = 6;
 	pixel_y = 8
 	},
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/holofloor/snow{
 	icon_state = "snow_dug"
 	},
 /area/event/snowy_forest)
 "bNy" = (
 /obj/structure/rack,
-/obj/item/clothing/under/pants/classicjeans,
+/obj/item/clothing/under/pants/jeans,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -1563,7 +1541,7 @@
 /turf/open/misc/ice,
 /area/event/snowy_forest)
 "bOO" = (
-/turf/open/floor/holofloor/beach/coast_b{
+/turf/open/floor/holofloor/beach/water{
 	dir = 9
 	},
 /area/event/snowy_forest)
@@ -1737,7 +1715,7 @@
 /area/event/snowy_forest)
 "bYR" = (
 /obj/structure/flora/grass/green,
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "bZu" = (
@@ -1901,7 +1879,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "cfL" = (
 /obj/structure/table/reinforced,
@@ -1909,7 +1887,7 @@
 /turf/open/floor/bamboo,
 /area/event/snowy_forest)
 "cgp" = (
-/obj/machinery/modular_computer/console/preset/civilian,
+/obj/machinery/modular_computer/preset/civilian,
 /turf/open/floor/mineral/titanium/tiled,
 /area/event/snowy_forest)
 "chg" = (
@@ -2425,7 +2403,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/candle/infinite,
+/obj/item/flashlight/flare/candle/infinite,
 /obj/item/binoculars,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
@@ -2498,7 +2476,7 @@
 /obj/structure/chair/sofa/bench/left{
 	dir = 8
 	},
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "cOY" = (
 /obj/structure/chair/sofa/corp/corner,
@@ -2581,7 +2559,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 6
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "cTB" = (
 /obj/effect/decal/turf_decal/shadow{
@@ -2882,7 +2860,7 @@
 	},
 /area/event/snowy_forest)
 "dlS" = (
-/turf/open/misc/beach/water,
+/turf/open/water/beach,
 /area/event/snowy_forest)
 "dmD" = (
 /obj/structure/flora/tree/pine,
@@ -3103,10 +3081,10 @@
 /area/event/snowy_forest)
 "dzI" = (
 /obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "dzY" = (
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/bush{
 	pixel_x = -5;
 	pixel_y = -3
@@ -3195,7 +3173,7 @@
 "dEC" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/structure/table/wood,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "dEQ" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -3782,7 +3760,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 10
 	},
-/obj/structure/sign/warning/securearea,
+/obj/structure/sign/warning/secure_area,
 /turf/open/floor/holofloor/snow{
 	icon_state = "snow_dug"
 	},
@@ -3889,7 +3867,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "ejj" = (
-/obj/machinery/door_timer{
+/obj/machinery/status_display/door_timer{
 	id = "brig3";
 	name = "Cell 3";
 	pixel_y = 32
@@ -4023,7 +4001,7 @@
 /turf/open/floor/plating,
 /area/event/snowy_forest)
 "eqj" = (
-/turf/open/floor/holofloor/beach/coast_t{
+/turf/open/floor/holofloor/beach/coast{
 	dir = 4
 	},
 /area/event/snowy_forest)
@@ -4171,7 +4149,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
 	},
-/obj/structure/holohoop{
+/obj/structure/hoop{
 	dir = 4
 	},
 /turf/open/floor/holofloor/snow{
@@ -4649,10 +4627,6 @@
 /area/event/snowy_forest)
 "fbu" = (
 /obj/structure/chair/wood,
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "fbH" = (
@@ -4704,7 +4678,7 @@
 	},
 /area/event/snowy_forest)
 "fgy" = (
-/turf/open/floor/holofloor/beach/coast_b{
+/turf/open/floor/holofloor/beach/water{
 	dir = 10
 	},
 /area/event/snowy_forest)
@@ -4918,7 +4892,7 @@
 	},
 /area/event/snowy_forest)
 "fvk" = (
-/turf/open/floor/holofloor/beach/coast_t{
+/turf/open/floor/holofloor/beach/coast{
 	dir = 1
 	},
 /area/event/snowy_forest)
@@ -5323,7 +5297,7 @@
 /area/event/snowy_forest)
 "fUV" = (
 /obj/structure/flora/grass/jungle,
-/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "fVx" = (
@@ -5519,7 +5493,7 @@
 /area/event/snowy_forest)
 "ghZ" = (
 /obj/structure/flora/tree/pine/xmas,
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 4
 	},
@@ -5600,19 +5574,13 @@
 	},
 /turf/open/misc/ice,
 /area/event/snowy_forest)
-"glX" = (
-/obj/machinery/door/airlock/alarmlock{
-	name = "FemCatboy Maid Cafe"
-	},
-/turf/open/floor/vault/rock,
-/area/event/snowy_forest)
 "gmq" = (
 /obj/structure/table/wood,
-/obj/item/candle/infinite{
+/obj/item/flashlight/flare/candle/infinite{
 	pixel_x = 1;
 	pixel_y = -2
 	},
-/obj/item/reagent_containers/cup/glass/britcup{
+/obj/item/reagent_containers/cup/glass/mug/britcup{
 	pixel_x = 8;
 	pixel_y = 5
 	},
@@ -5646,7 +5614,7 @@
 /area/event/snowy_forest)
 "gqk" = (
 /obj/structure/table/wood,
-/obj/item/candle/infinite{
+/obj/item/flashlight/flare/candle/infinite{
 	pixel_x = 1;
 	pixel_y = 3
 	},
@@ -5671,10 +5639,6 @@
 /area/event/snowy_forest)
 "grd" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
 "grz" = (
@@ -5753,17 +5717,17 @@
 /area/event/snowy_forest)
 "gtH" = (
 /obj/structure/table,
-/obj/item/clothing/head/helmet/redtaghelm,
-/obj/item/clothing/head/helmet/redtaghelm,
-/obj/item/clothing/head/helmet/redtaghelm,
-/obj/item/clothing/head/helmet/redtaghelm,
-/obj/item/clothing/head/helmet/redtaghelm,
-/obj/item/clothing/head/helmet/redtaghelm,
+/obj/item/clothing/head/helmet/taghelm/red,
+/obj/item/clothing/head/helmet/taghelm/red,
+/obj/item/clothing/head/helmet/taghelm/red,
+/obj/item/clothing/head/helmet/taghelm/red,
+/obj/item/clothing/head/helmet/taghelm/red,
+/obj/item/clothing/head/helmet/taghelm/red,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "gtR" = (
 /obj/machinery/door/airlock/grunge{
@@ -5878,7 +5842,7 @@
 /area/event/snowy_forest)
 "gxR" = (
 /obj/machinery/smartfridge/drinks,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "gyi" = (
 /obj/structure/chair/pew{
@@ -5940,7 +5904,7 @@
 /turf/open/misc/sandy_dirt,
 /area/event/snowy_forest)
 "gEj" = (
-/obj/machinery/door_timer{
+/obj/machinery/status_display/door_timer{
 	id = "brig1";
 	name = "Cell 1";
 	pixel_y = 32
@@ -6016,7 +5980,7 @@
 /area/event/snowy_forest)
 "gHb" = (
 /obj/structure/chair/sofa/bench/right,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "gHj" = (
 /obj/structure/fence,
@@ -6183,7 +6147,7 @@
 /obj/effect/spawner/random/food_or_drink/three_course_meal{
 	pixel_y = 12
 	},
-/obj/item/candle/infinite{
+/obj/item/flashlight/flare/candle/infinite{
 	pixel_x = -9;
 	pixel_y = 4
 	},
@@ -6475,7 +6439,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "hdR" = (
-/obj/machinery/modular_computer/console/preset/civilian{
+/obj/machinery/modular_computer/preset/civilian{
 	dir = 4
 	},
 /turf/open/floor/mineral/titanium/white,
@@ -6535,7 +6499,7 @@
 /obj/structure/rack,
 /obj/item/clothing/shoes/wheelys/rollerskates,
 /obj/item/clothing/shoes/wheelys/rollerskates,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "hhL" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -6557,7 +6521,7 @@
 /turf/open/floor/stonebrick,
 /area/event/snowy_forest)
 "hiA" = (
-/obj/structure/shuttle/engine/heater,
+/obj/machinery/power/shuttle_engine/heater,
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/plating/airless,
 /area/event/snowy_forest)
@@ -6756,7 +6720,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "huM" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -6994,7 +6958,7 @@
 /obj/structure/fence{
 	dir = 4
 	},
-/obj/structure/sign/warning/securearea,
+/obj/structure/sign/warning/secure_area,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "hPY" = (
@@ -7025,14 +6989,14 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "hRe" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/wheelys/rollerskates,
 /obj/item/clothing/shoes/wheelys/rollerskates,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "hSw" = (
 /obj/structure/railing/corner{
@@ -7091,7 +7055,7 @@
 /turf/closed/wall/mineral/wood,
 /area/event/snowy_forest)
 "hXx" = (
-/obj/structure/mopbucket,
+/obj/structure/mop_bucket,
 /obj/item/mop,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
@@ -7196,7 +7160,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 6
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "ibM" = (
 /obj/effect/turf_decal/weather/sand{
@@ -7374,7 +7338,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "ile" = (
-/obj/structure/sign/warning/hottemp,
+/obj/structure/sign/warning/hot_temp,
 /turf/closed/wall/mineral/wood,
 /area/event/snowy_forest)
 "ilm" = (
@@ -7407,13 +7371,13 @@
 /area/event/snowy_forest)
 "ilI" = (
 /obj/effect/turf_decal/siding/wood/corner,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "ilT" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
 	},
-/obj/structure/holohoop{
+/obj/structure/hoop{
 	dir = 8
 	},
 /turf/open/floor/holofloor/snow{
@@ -7515,7 +7479,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 10
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "ipX" = (
 /turf/open/misc/beach/coastline_t/sandwater_inner{
@@ -7685,7 +7649,7 @@
 	},
 /area/event/snowy_forest)
 "iAR" = (
-/turf/open/floor/holofloor/beach/coast_b{
+/turf/open/floor/holofloor/beach/water{
 	dir = 6
 	},
 /area/event/snowy_forest)
@@ -8083,7 +8047,7 @@
 /area/event/snowy_forest)
 "jbo" = (
 /obj/structure/flora/grass/green,
-/obj/structure/flora/stump,
+/obj/structure/flora/tree/stump,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "jce" = (
@@ -8117,7 +8081,7 @@
 /area/event/snowy_forest)
 "jeb" = (
 /obj/structure/table/wood,
-/obj/item/storage/book/bible,
+/obj/item/book/bible,
 /turf/open/floor/iron/sepia,
 /area/event/snowy_forest)
 "jel" = (
@@ -8141,7 +8105,7 @@
 /obj/machinery/door/window/left/directional/south{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "jfQ" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -8247,7 +8211,7 @@
 /turf/open/misc/sandy_dirt,
 /area/event/snowy_forest)
 "jnj" = (
-/obj/machinery/door/keycard/yellow_required{
+/obj/machinery/door/puzzle/keycard/yellow_required{
 	name = "yellow? airlock"
 	},
 /turf/open/floor/circuit/green/anim,
@@ -8256,7 +8220,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "jnJ" = (
 /obj/machinery/conveyor/auto{
@@ -8589,17 +8553,13 @@
 	},
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
-"jGr" = (
-/obj/effect/decal/cleanable/xenoblood/xsplatter,
-/turf/open/floor/iron/dark,
-/area/event/snowy_forest)
 "jHi" = (
 /obj/structure/curtain/cloth/fancy,
 /obj/effect/spawner/structure/window/ice,
 /turf/open/floor/plating/elevatorshaft,
 /area/event/snowy_forest)
 "jHt" = (
-/obj/structure/no_effect_signpost,
+/obj/structure/signpost,
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "jHH" = (
@@ -8798,7 +8758,7 @@
 /turf/open/misc/ashplanet/wateryrock,
 /area/event/snowy_forest)
 "jSU" = (
-/obj/structure/flora/stump,
+/obj/structure/flora/tree/stump,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "jTx" = (
@@ -8928,7 +8888,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/event/snowy_forest)
 "jZr" = (
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "kah" = (
 /obj/structure/rack,
@@ -9456,7 +9416,7 @@
 	dir = 4
 	},
 /obj/structure/sign/poster/official/no_erp/directional/west,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "kGk" = (
 /obj/structure/chair{
@@ -9493,7 +9453,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 9
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "kHl" = (
 /obj/structure/hedge,
@@ -9809,10 +9769,6 @@
 /obj/structure/chair/wood{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
 /obj/structure/sign/poster/random/directional/west,
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
@@ -10036,7 +9992,7 @@
 /obj/item/melee/skateboard,
 /obj/item/melee/skateboard,
 /obj/item/melee/skateboard,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "lmo" = (
 /obj/structure/chair/comfy/carp,
@@ -10506,7 +10462,7 @@
 /turf/open/floor/carpet/red,
 /area/event/snowy_forest)
 "lPY" = (
-/turf/open/floor/holofloor/beach/coast_t{
+/turf/open/floor/holofloor/beach/coast{
 	dir = 10
 	},
 /area/event/snowy_forest)
@@ -10546,7 +10502,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "lRH" = (
 /obj/effect/turf_decal/weather/sand{
@@ -10570,7 +10526,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "lSa" = (
 /obj/structure/railing{
@@ -10580,7 +10536,7 @@
 /area/event/snowy_forest)
 "lSi" = (
 /obj/structure/table/wood,
-/obj/item/storage/book/bible,
+/obj/item/book/bible,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "lSt" = (
@@ -10707,7 +10663,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "lWx" = (
-/turf/open/floor/holofloor/beach/coast_b{
+/turf/open/floor/holofloor/beach/water{
 	dir = 5
 	},
 /area/event/snowy_forest)
@@ -10888,15 +10844,15 @@
 "mio" = (
 /obj/structure/table,
 /obj/item/radio/intercom/directional/south,
-/obj/item/storage/firstaid/regular{
+/obj/item/storage/medkit/regular{
 	pixel_x = 5;
 	pixel_y = 3
 	},
-/obj/item/storage/firstaid/fire,
-/obj/item/storage/firstaid/toxin{
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/toxin{
 	pixel_x = -3
 	},
-/obj/item/storage/firstaid/o2{
+/obj/item/storage/medkit/o2{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -11100,7 +11056,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "mwI" = (
 /obj/machinery/chem_dispenser/drinks,
@@ -11129,7 +11085,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 5
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "mxG" = (
 /obj/machinery/stasis,
@@ -11227,7 +11183,7 @@
 /obj/item/melee/skateboard/pro,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "mBv" = (
 /obj/effect/decal/cleanable/blood/gibs/bubblegum,
@@ -11364,10 +11320,10 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 9
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "mKQ" = (
-/turf/open/floor/holofloor/beach/coast_b{
+/turf/open/floor/holofloor/beach/water{
 	dir = 4
 	},
 /area/event/snowy_forest)
@@ -11381,7 +11337,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "mLT" = (
 /obj/structure/chair/comfy/brown{
@@ -11428,7 +11384,7 @@
 	pixel_x = 5;
 	pixel_y = -2
 	},
-/obj/structure/flora/ausbushes/pointybush{
+/obj/structure/flora/bush/pointy/style_random{
 	pixel_x = -8;
 	pixel_y = 4
 	},
@@ -11653,7 +11609,7 @@
 	dir = 9
 	},
 /obj/structure/table/wood,
-/obj/item/candle/infinite,
+/obj/item/flashlight/flare/candle/infinite,
 /obj/item/binoculars,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
@@ -11662,7 +11618,7 @@
 	dir = 1
 	},
 /obj/structure/chair/wood,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "mZF" = (
 /obj/effect/turf_decal/siding/wood{
@@ -12302,7 +12258,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "nHe" = (
 /obj/structure/railing{
@@ -12403,7 +12359,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "nMa" = (
 /obj/effect/turf_decal/weather/sand{
@@ -12440,7 +12396,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "nNY" = (
-/obj/machinery/door/keycard/blue_required,
+/obj/machinery/door/puzzle/keycard/blue_required,
 /turf/open/floor/plating/snowed/smoothed,
 /area/event/snowy_forest)
 "nOy" = (
@@ -12472,7 +12428,7 @@
 /area/event/snowy_forest)
 "nQp" = (
 /obj/structure/table/wood,
-/obj/item/clothing/under/dress/blacktango,
+/obj/item/clothing/under/dress/tango,
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "nQI" = (
@@ -12652,14 +12608,14 @@
 /turf/open/misc/sandy_dirt,
 /area/event/snowy_forest)
 "nZU" = (
-/turf/open/floor/holofloor/beach/coast_t{
+/turf/open/floor/holofloor/beach/coast{
 	dir = 9
 	},
 /area/event/snowy_forest)
 "oai" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/waterbottle/large,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "oax" = (
 /obj/structure/chair/sofa/left{
@@ -12710,7 +12666,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "oer" = (
 /obj/structure/railing{
@@ -12776,9 +12732,9 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/item/food/grown/flower/sunflower,
-/obj/structure/flora/ausbushes/brflowers,
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ywflowers,
+/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/flowers_pp/style_random,
+/obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "oio" = (
@@ -12851,7 +12807,7 @@
 /turf/open/misc/ashplanet,
 /area/event/snowy_forest)
 "olY" = (
-/turf/open/floor/holofloor/beach/coast_b,
+/turf/open/floor/holofloor/beach/water,
 /area/event/snowy_forest)
 "omj" = (
 /obj/structure/chair/pew{
@@ -13546,7 +13502,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "oUX" = (
-/obj/structure/shuttle/engine/heater{
+/obj/machinery/power/shuttle_engine/heater{
 	dir = 8
 	},
 /obj/structure/window/reinforced/plasma/spawner/directional/east,
@@ -13717,7 +13673,7 @@
 /area/event/snowy_forest)
 "pfj" = (
 /obj/structure/table/reinforced/plasmarglass,
-/obj/item/areaeditor/blueprints{
+/obj/item/blueprints{
 	name = "city blueprints"
 	},
 /obj/item/gun/energy/meteorgun/pen{
@@ -13988,7 +13944,7 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "pta" = (
-/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "ptb" = (
@@ -14206,7 +14162,7 @@
 /area/event/snowy_forest)
 "pJx" = (
 /obj/structure/table/reinforced/plasmarglass,
-/obj/item/reagent_containers/cup/glass/sillycup/smallcarton,
+/obj/item/reagent_containers/cup/glass/bottle/juice/smallcarton,
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "pJX" = (
@@ -14313,7 +14269,7 @@
 /area/event/snowy_forest)
 "pPZ" = (
 /obj/structure/chair/sofa/bench/left,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "pQf" = (
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -14477,7 +14433,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "pZA" = (
-/turf/open/floor/holofloor/beach/coast_b{
+/turf/open/floor/holofloor/beach/water{
 	dir = 1
 	},
 /area/event/snowy_forest)
@@ -14510,7 +14466,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/shoes/wheelys/rollerskates,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "qbf" = (
 /obj/machinery/door/airlock/shuttle/glass{
@@ -14690,7 +14646,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "qlE" = (
 /turf/closed/indestructible/fakedoor{
@@ -14703,7 +14659,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/candle/infinite,
+/obj/item/flashlight/flare/candle/infinite,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "qmq" = (
@@ -15031,14 +14987,14 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "qBs" = (
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "qBT" = (
 /turf/closed/wall/mineral/plasma,
 /area/event/snowy_forest)
 "qDd" = (
-/turf/open/floor/holofloor/beach/coast_b{
+/turf/open/floor/holofloor/beach/water{
 	dir = 8
 	},
 /area/event/snowy_forest)
@@ -15071,7 +15027,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/event/snowy_forest)
 "qEx" = (
-/obj/structure/flora/ausbushes/sunnybush,
+/obj/structure/flora/bush/sunny/style_random,
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "qEI" = (
@@ -15280,7 +15236,7 @@
 /area/event/snowy_forest)
 "qSM" = (
 /obj/structure/flora/tree/pine,
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "qSS" = (
@@ -15442,7 +15398,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "rbt" = (
 /obj/effect/turf_decal/siding/wood,
@@ -15471,7 +15427,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "rcw" = (
 /obj/effect/turf_decal/siding/white{
@@ -15542,7 +15498,7 @@
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "rjz" = (
-/obj/machinery/modular_computer/console/preset/civilian{
+/obj/machinery/modular_computer/preset/civilian{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -15570,7 +15526,7 @@
 /area/event/snowy_forest)
 "rlP" = (
 /obj/structure/chair/sofa/bench,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "rlX" = (
 /turf/open/floor/iron/stairs/right{
@@ -15793,7 +15749,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "rxv" = (
-/obj/machinery/modular_computer/console/preset/civilian{
+/obj/machinery/modular_computer/preset/civilian{
 	dir = 8
 	},
 /turf/open/floor/eighties/red,
@@ -15903,7 +15859,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/event/snowy_forest/quiplash_audience)
 "rCR" = (
-/turf/open/floor/holofloor/beach/coast_t{
+/turf/open/floor/holofloor/beach/coast{
 	dir = 8
 	},
 /area/event/snowy_forest)
@@ -16179,7 +16135,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "rPB" = (
-/obj/structure/shuttle/engine/heater{
+/obj/machinery/power/shuttle_engine/heater{
 	dir = 8
 	},
 /obj/structure/window/reinforced/plasma/spawner/directional/east,
@@ -16240,7 +16196,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "rRY" = (
-/obj/machinery/door_timer{
+/obj/machinery/status_display/door_timer{
 	id = "brig2";
 	name = "Cell 2";
 	pixel_y = 32
@@ -16323,7 +16279,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "rZJ" = (
 /obj/effect/turf_decal/siding/wood{
@@ -16398,7 +16354,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "sdv" = (
-/obj/structure/shuttle/engine/propulsion,
+/obj/machinery/power/shuttle_engine/propulsion,
 /turf/open/floor/plating/airless,
 /area/event/snowy_forest)
 "sdy" = (
@@ -16439,7 +16395,7 @@
 /turf/open/misc/ashplanet/rocky,
 /area/event/snowy_forest)
 "sff" = (
-/turf/open/floor/holofloor/beach/coast_t{
+/turf/open/floor/holofloor/beach/coast{
 	dir = 5
 	},
 /area/event/snowy_forest)
@@ -16807,10 +16763,6 @@
 /area/event/snowy_forest)
 "szH" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
 /obj/structure/sign/poster/random/directional/east,
 /obj/item/plate/large,
 /obj/item/food/cake/holy_cake,
@@ -16862,10 +16814,6 @@
 /turf/open/misc/sandy_dirt,
 /area/event/snowy_forest)
 "sBo" = (
-/obj/item/clothing/suit/costume/nerdshirt{
-	desc = "I searched the entire map, found the secret keycard, used it to enter the secret vault, and all I got was this stupid t-shirt.";
-	name = "prize shirt"
-	},
 /obj/structure/table/wood,
 /turf/open/floor/iron,
 /area/event/snowy_forest)
@@ -17058,7 +17006,7 @@
 "sMg" = (
 /obj/structure/table/wood,
 /obj/structure/bedsheetbin,
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "sNl" = (
 /obj/structure/flora/grass/green,
@@ -17135,7 +17083,7 @@
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "sRA" = (
-/turf/open/floor/holofloor/beach/coast_t{
+/turf/open/floor/holofloor/beach/coast{
 	dir = 6
 	},
 /area/event/snowy_forest)
@@ -17387,7 +17335,7 @@
 /area/event/snowy_forest)
 "tgL" = (
 /obj/structure/flora/tree/dead,
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "tgN" = (
@@ -17698,7 +17646,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "txp" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -17795,7 +17743,7 @@
 /area/event/snowy_forest)
 "tBP" = (
 /obj/structure/table/wood/fancy/royalblue,
-/obj/item/candle/infinite,
+/obj/item/flashlight/flare/candle/infinite,
 /turf/open/floor/wood/tile,
 /area/event/snowy_forest)
 "tBQ" = (
@@ -17901,7 +17849,7 @@
 /turf/open/floor/iron,
 /area/event/snowy_forest)
 "tFr" = (
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/bush{
 	pixel_x = -5;
 	pixel_y = -3
@@ -17960,7 +17908,7 @@
 /area/event/snowy_forest)
 "tHY" = (
 /obj/structure/flora/tree/pine/xmas,
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 8
 	},
@@ -18031,7 +17979,7 @@
 /obj/structure/chair/sofa/bench/right{
 	dir = 8
 	},
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "tNj" = (
 /obj/structure/table/wood,
@@ -18178,7 +18126,7 @@
 	},
 /area/event/snowy_forest)
 "tUj" = (
-/obj/machinery/computer/secure_data{
+/obj/machinery/computer/records/security{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -18389,14 +18337,14 @@
 /area/event/snowy_forest)
 "ueb" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/shotgun/toy/unrestricted{
+/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted{
 	pixel_y = 4
 	},
-/obj/item/gun/ballistic/shotgun/toy/unrestricted{
+/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted{
 	pixel_y = 2
 	},
-/obj/item/gun/ballistic/shotgun/toy/unrestricted,
-/obj/item/gun/ballistic/shotgun/toy/unrestricted{
+/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted,
+/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted{
 	pixel_y = -2
 	},
 /turf/open/floor/wood,
@@ -18429,7 +18377,7 @@
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "ueV" = (
-/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/holofloor/snow{
 	icon_state = "snow_dug"
 	},
@@ -18501,7 +18449,7 @@
 /area/event/snowy_forest)
 "uiP" = (
 /obj/structure/table/wood,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "ujh" = (
 /obj/structure/chair/sofa/corp{
@@ -18824,7 +18772,7 @@
 /area/event/snowy_forest)
 "uyV" = (
 /obj/structure/flora/tree/jungle/small,
-/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "uzj" = (
@@ -18893,7 +18841,7 @@
 /area/event/snowy_forest)
 "uBZ" = (
 /obj/structure/flora/tree/jungle,
-/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/misc/grass/jungle,
 /area/event/snowy_forest)
 "uCo" = (
@@ -18906,7 +18854,7 @@
 	},
 /area/event/snowy_forest)
 "uDb" = (
-/obj/machinery/telecomms/allinone/indestructable,
+/obj/machinery/telecomms/allinone/indestructible,
 /turf/closed/indestructible/rock/snow/ice/ore,
 /area/event/snowy_forest)
 "uDo" = (
@@ -18935,7 +18883,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 9
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "uEP" = (
 /obj/structure/closet/secure_closet/security,
@@ -18983,10 +18931,10 @@
 /obj/structure/chair/sofa/bench/left{
 	dir = 4
 	},
-/turf/open/floor/wood/sauna,
+/turf/open/water/hot_spring,
 /area/event/snowy_forest)
 "uGk" = (
-/obj/structure/flora/ausbushes/pointybush{
+/obj/structure/flora/bush/pointy/style_random{
 	pixel_x = -2;
 	pixel_y = 4
 	},
@@ -19144,7 +19092,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "uNQ" = (
-/obj/structure/shuttle/engine/propulsion{
+/obj/machinery/power/shuttle_engine/propulsion{
 	dir = 8
 	},
 /turf/open/floor/plating/airless,
@@ -19191,12 +19139,8 @@
 /area/event/snowy_forest)
 "uPH" = (
 /obj/structure/table/reinforced,
-/obj/item/paper/crumpled/ruins/snowdin/dontdeadopeninside{
-	pixel_x = 3;
-	pixel_y = 5
-	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "uPP" = (
 /obj/machinery/deepfryer,
@@ -19301,7 +19245,7 @@
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "uWQ" = (
-/turf/open/floor/holofloor/beach/coast_t,
+/turf/open/floor/holofloor/beach/coast,
 /area/event/snowy_forest)
 "uXW" = (
 /obj/structure/chair/stool/directional/east,
@@ -19402,7 +19346,7 @@
 /area/event/snowy_forest)
 "vey" = (
 /obj/structure/table/reinforced,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "veC" = (
 /obj/structure/table/wood,
@@ -19461,7 +19405,7 @@
 /turf/open/floor/carpet/green,
 /area/event/snowy_forest)
 "vhF" = (
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/tree/pine,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
@@ -19570,7 +19514,7 @@
 "voj" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/siding/thinplating,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "vom" = (
 /obj/structure/extinguisher_cabinet/directional/east,
@@ -19668,7 +19612,7 @@
 /area/event/snowy_forest)
 "vut" = (
 /obj/structure/table/wood,
-/obj/item/candle/infinite{
+/obj/item/flashlight/flare/candle/infinite{
 	pixel_x = -9;
 	pixel_y = 3
 	},
@@ -19702,10 +19646,6 @@
 /area/event/snowy_forest)
 "vvX" = (
 /obj/structure/chair/wood,
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
 /obj/structure/sign/poster/random/directional/west,
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
@@ -19741,7 +19681,7 @@
 	dir = 5
 	},
 /obj/structure/table/wood,
-/obj/item/candle/infinite,
+/obj/item/flashlight/flare/candle/infinite,
 /turf/open/floor/wood,
 /area/event/snowy_forest)
 "vxr" = (
@@ -19797,7 +19737,7 @@
 /turf/open/floor/stonebrick,
 /area/event/snowy_forest)
 "vyx" = (
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "vyV" = (
 /obj/structure/table/wood,
@@ -19940,7 +19880,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "vHK" = (
 /turf/open/floor/carpet/donk,
@@ -19994,7 +19934,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 10
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "vKY" = (
 /obj/effect/turf_decal/siding/wood,
@@ -20004,7 +19944,7 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/machinery/modular_computer/console/preset/civilian{
+/obj/machinery/modular_computer/preset/civilian{
 	dir = 1;
 	name = "Train Controls"
 	},
@@ -20105,7 +20045,7 @@
 	},
 /area/event/snowy_forest)
 "vSH" = (
-/obj/structure/flora/rock/pile/largejungle,
+/obj/structure/flora/rock/pile/jungle/large/style_random,
 /turf/open/floor/holofloor/snow{
 	icon_state = "snow_dug"
 	},
@@ -20486,16 +20426,16 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 6
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "wtn" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /obj/item/reagent_containers/cup/glass/mug/tea,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "wtE" = (
-/obj/structure/janitorialcart{
+/obj/structure/mop_bucket/janitorialcart{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -20516,7 +20456,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "wuY" = (
 /obj/structure/chair/sofa/bench/left,
@@ -20581,7 +20521,7 @@
 "wyY" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/weather/snow/corner,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "wzd" = (
 /obj/structure/chair/sofa/corp/left{
@@ -20766,7 +20706,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/machinery/computer/secure_data,
+/obj/machinery/computer/records/security,
 /turf/open/floor/iron/dark,
 /area/event/snowy_forest)
 "wIy" = (
@@ -20910,7 +20850,7 @@
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "wPf" = (
-/turf/open/floor/grass/fakebasalt,
+/turf/open/floor/fakebasalt,
 /area/event/snowy_forest)
 "wPh" = (
 /obj/structure/table/reinforced,
@@ -20919,7 +20859,7 @@
 	dir = 4
 	},
 /obj/item/reagent_containers/cup/glass/mug/coco,
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "wQF" = (
 /obj/effect/turf_decal/tile/red,
@@ -20973,7 +20913,6 @@
 /area/event/snowy_forest)
 "wUn" = (
 /obj/structure/table/wood,
-/obj/item/food/cake/bscc,
 /obj/item/knife/hunting,
 /turf/open/floor/holofloor/snow{
 	icon_state = "snow_dug"
@@ -20986,7 +20925,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
 	},
-/turf/open/floor/pod,
+/turf/open/floor/mineral/plastitanium/pod,
 /area/event/snowy_forest)
 "wUX" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -21178,7 +21117,7 @@
 /area/event/snowy_forest)
 "xfw" = (
 /obj/structure/table/reinforced,
-/obj/structure/reagent_dispensers/beerkeg,
+/obj/effect/spawner/random/food_or_drink/keg,
 /turf/open/floor/stone,
 /area/event/snowy_forest)
 "xfx" = (
@@ -21646,7 +21585,7 @@
 	},
 /area/event/snowy_forest)
 "xAp" = (
-/obj/item/toy/beach_ball/holoball,
+/obj/item/toy/basketball,
 /turf/open/floor/holofloor/snow{
 	icon_state = "snow_dug"
 	},
@@ -21839,7 +21778,7 @@
 /obj/structure/statue/sandstone/assistant{
 	pixel_y = 9
 	},
-/turf/open/floor/grass/fakebasalt,
+/turf/open/floor/fakebasalt,
 /area/event/snowy_forest)
 "xHZ" = (
 /obj/effect/landmark/cornfield_monster_path_point{
@@ -21937,10 +21876,6 @@
 /turf/open/floor/carpet,
 /area/event/snowy_forest)
 "xLX" = (
-/obj/effect/turf_decal/tile/random,
-/obj/effect/turf_decal/tile/random{
-	dir = 1
-	},
 /obj/structure/sign/poster/random/directional/east,
 /turf/open/floor/iron/white,
 /area/event/snowy_forest)
@@ -22014,7 +21949,7 @@
 /area/event/snowy_forest)
 "xQc" = (
 /obj/structure/flora/tree/pine/xmas,
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/lavendergrass/style_random,
 /turf/open/floor/holofloor/snow,
 /area/event/snowy_forest)
 "xRD" = (
@@ -22366,7 +22301,7 @@
 /area/event/snowy_forest)
 "yjH" = (
 /obj/structure/table/wood,
-/obj/item/candle/infinite{
+/obj/item/flashlight/flare/candle/infinite{
 	pixel_x = 1;
 	pixel_y = 3
 	},
@@ -42129,7 +42064,7 @@ hqA
 ktt
 ijI
 ijI
-jGr
+ijI
 ijI
 ijI
 eYF
@@ -52110,10 +52045,10 @@ cMW
 qKp
 uWQ
 bOO
-aqb
-aqb
-aqb
-aqb
+olY
+olY
+olY
+olY
 mKQ
 fgy
 sff
@@ -52367,12 +52302,12 @@ wgz
 qKp
 uWQ
 olY
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
+olY
+olY
+olY
+olY
+olY
+olY
 mKQ
 fgy
 sff
@@ -52624,14 +52559,14 @@ wgz
 qKp
 uWQ
 olY
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
+olY
+olY
+olY
+olY
+olY
+olY
+olY
+olY
 fgy
 fvk
 qKp
@@ -52882,13 +52817,13 @@ qKp
 uWQ
 lWx
 qDd
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
+olY
+olY
+olY
+olY
+olY
+olY
+olY
 pZA
 sff
 ipX
@@ -53140,13 +53075,13 @@ hes
 rCR
 lPY
 olY
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
+olY
+olY
+olY
+olY
+olY
+olY
+olY
 fgy
 fvk
 qKp
@@ -53397,12 +53332,12 @@ qKp
 dHA
 uWQ
 lWx
-aqb
-aqb
-aqb
-aqb
-aqb
-aqb
+olY
+olY
+olY
+olY
+olY
+olY
 qDd
 iAR
 fvk
@@ -53655,9 +53590,9 @@ cCA
 hes
 lPY
 lWx
-aqb
-aqb
-aqb
+olY
+olY
+olY
 qDd
 iAR
 nZU
@@ -74532,7 +74467,7 @@ rkT
 iAj
 rkT
 rkT
-aRt
+vCx
 ryD
 leV
 ryD
@@ -84293,11 +84228,11 @@ nux
 nux
 pvc
 sTz
-glX
-aft
-aft
-aft
-aft
+sTz
+cLK
+cLK
+cLK
+cLK
 kwO
 crC
 sdy
@@ -84554,7 +84489,7 @@ lNL
 fbu
 grd
 amX
-aft
+cLK
 kwO
 crC
 gNA
