@@ -1,5 +1,11 @@
+import {
+  Button,
+  Icon,
+  LabeledList,
+  Section,
+  Table,
+} from 'tgui-core/components';
 import { useBackend } from '../backend';
-import { Button, Icon, LabeledList, Section, Table } from '../components';
 import { Window } from '../layouts';
 
 type QuiplashData = {
