@@ -8,7 +8,7 @@
 
 #define COMSIG_QUIPLASH_STATUS_UPDATE "quiplash_status_update"
 
-#define PROMPTS_FILE "modular_event/winter_ball_2021/quiplash/quiplash_prompts.txt"
+#define PROMPTS_FILE "modular_zzevent/winter_ball/quiplash/quiplash_prompts.txt"
 
 GLOBAL_LIST_EMPTY(quiplash_games)
 
